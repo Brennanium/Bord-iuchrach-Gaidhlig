@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct Bord_iuchrach_GaidhligApp: App {
+struct BGApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

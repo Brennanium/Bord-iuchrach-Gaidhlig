@@ -3,23 +3,77 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F357BA4225AD6B040019D597 /* Bord_iuchrach_GaidhligApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA4125AD6B040019D597 /* Bord_iuchrach_GaidhligApp.swift */; };
+		F357BA4225AD6B040019D597 /* BGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA4125AD6B040019D597 /* BGApp.swift */; };
 		F357BA4425AD6B040019D597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA4325AD6B040019D597 /* ContentView.swift */; };
 		F357BA4625AD6B0B0019D597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F357BA4525AD6B0B0019D597 /* Assets.xcassets */; };
 		F357BA4925AD6B0B0019D597 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F357BA4825AD6B0B0019D597 /* Preview Assets.xcassets */; };
+		F357BA5825AD6D530019D597 /* BGKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA5725AD6D530019D597 /* BGKeyboardViewController.swift */; };
+		F357BA5C25AD6D530019D597 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F357BA5525AD6D520019D597 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F357BA6525AD6E0E0019D597 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F357BA6425AD6E0E0019D597 /* KeyboardKit */; };
+		F357BA7025AD6EA70019D597 /* KeyboardKitSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F357BA6F25AD6EA70019D597 /* KeyboardKitSwiftUI */; };
+		F357BAAC25AD77620019D597 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F357BAAB25AD77620019D597 /* KeyboardKit */; };
+		F36CDC0E25B01285003D0D22 /* BGAutocompleteToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */; };
+		F383245825AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */; };
+		F383245925AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */; };
+		F383245D25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */; };
+		F383245E25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */; };
+		F3ED260625B29CBF009F4654 /* BGKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */; };
+		F3ED260A25B29D12009F4654 /* BGKeyboardView+Keyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED260925B29D12009F4654 /* BGKeyboardView+Keyboards.swift */; };
+		F3ED261425B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261325B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift */; };
+		F3ED261A25B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261925B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift */; };
+		F3ED262025B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261F25B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift */; };
+		F3ED262625B29FF0009F4654 /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED262525B29FF0009F4654 /* DemoKeyboardActionHandler.swift */; };
+		F3FAFCF325AD9DC100380F77 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FAFCF225AD9DC100380F77 /* Keyboard.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F357BA5A25AD6D530019D597 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F357BA3625AD6B030019D597 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F357BA5425AD6D520019D597;
+			remoteInfo = Keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F357BA6025AD6D530019D597 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F357BA5C25AD6D530019D597 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F357BA3E25AD6B040019D597 /* Bord-iuchrach Gaidhlig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bord-iuchrach Gaidhlig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F357BA4125AD6B040019D597 /* Bord_iuchrach_GaidhligApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bord_iuchrach_GaidhligApp.swift; sourceTree = "<group>"; };
+		F357BA4125AD6B040019D597 /* BGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGApp.swift; sourceTree = "<group>"; };
 		F357BA4325AD6B040019D597 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F357BA4525AD6B0B0019D597 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F357BA4825AD6B0B0019D597 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F357BA4A25AD6B0B0019D597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F357BA5525AD6D520019D597 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F357BA5725AD6D530019D597 /* BGKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGKeyboardViewController.swift; sourceTree = "<group>"; };
+		F357BA5925AD6D530019D597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGAutocompleteToolbar.swift; sourceTree = "<group>"; };
+		F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGKeyboardView.swift; sourceTree = "<group>"; };
+		F3ED260925B29D12009F4654 /* BGKeyboardView+Keyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BGKeyboardView+Keyboards.swift"; sourceTree = "<group>"; };
+		F3ED261325B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandlerBase.swift; sourceTree = "<group>"; };
+		F3ED261925B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
+		F3ED261F25B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardAppearanceProvider.swift; sourceTree = "<group>"; };
+		F3ED262525B29FF0009F4654 /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F3FAFCF225AD9DC100380F77 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +81,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F357BAAC25AD77620019D597 /* KeyboardKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F357BA5225AD6D520019D597 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F357BA7025AD6EA70019D597 /* KeyboardKitSwiftUI in Frameworks */,
+				F357BA6525AD6E0E0019D597 /* KeyboardKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +100,11 @@
 		F357BA3525AD6B030019D597 = {
 			isa = PBXGroup;
 			children = (
+				F357BA7325AD71660019D597 /* Shared */,
 				F357BA4025AD6B040019D597 /* Bord-iuchrach Gaidhlig */,
+				F357BA5625AD6D530019D597 /* Keyboard */,
 				F357BA3F25AD6B040019D597 /* Products */,
+				F357BAAA25AD77620019D597 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				F357BA3E25AD6B040019D597 /* Bord-iuchrach Gaidhlig.app */,
+				F357BA5525AD6D520019D597 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -52,7 +120,7 @@
 		F357BA4025AD6B040019D597 /* Bord-iuchrach Gaidhlig */ = {
 			isa = PBXGroup;
 			children = (
-				F357BA4125AD6B040019D597 /* Bord_iuchrach_GaidhligApp.swift */,
+				F357BA4125AD6B040019D597 /* BGApp.swift */,
 				F357BA4325AD6B040019D597 /* ContentView.swift */,
 				F357BA4525AD6B0B0019D597 /* Assets.xcassets */,
 				F357BA4A25AD6B0B0019D597 /* Info.plist */,
@@ -69,6 +137,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F357BA5625AD6D530019D597 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED262525B29FF0009F4654 /* DemoKeyboardActionHandler.swift */,
+				F357BA5725AD6D530019D597 /* BGKeyboardViewController.swift */,
+				F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */,
+				F3ED260925B29D12009F4654 /* BGKeyboardView+Keyboards.swift */,
+				F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */,
+				F3FAFCF225AD9DC100380F77 /* Keyboard.swift */,
+				F357BA5925AD6D530019D597 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		F357BA7325AD71660019D597 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F3ED261925B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift */,
+				F3ED261325B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift */,
+				F3ED261F25B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift */,
+				F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */,
+				F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F357BAAA25AD77620019D597 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +180,41 @@
 				F357BA3A25AD6B040019D597 /* Sources */,
 				F357BA3B25AD6B040019D597 /* Frameworks */,
 				F357BA3C25AD6B040019D597 /* Resources */,
+				F357BA6025AD6D530019D597 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F357BA5B25AD6D530019D597 /* PBXTargetDependency */,
+			);
+			name = "Bord-iuchrach Gaidhlig";
+			packageProductDependencies = (
+				F357BAAB25AD77620019D597 /* KeyboardKit */,
+			);
+			productName = "Bord-iuchrach Gaidhlig";
+			productReference = F357BA3E25AD6B040019D597 /* Bord-iuchrach Gaidhlig.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F357BA5425AD6D520019D597 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F357BA5D25AD6D530019D597 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				F357BA5125AD6D520019D597 /* Sources */,
+				F357BA5225AD6D520019D597 /* Frameworks */,
+				F357BA5325AD6D520019D597 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Bord-iuchrach Gaidhlig";
-			productName = "Bord-iuchrach Gaidhlig";
-			productReference = F357BA3E25AD6B040019D597 /* Bord-iuchrach Gaidhlig.app */;
-			productType = "com.apple.product-type.application";
+			name = Keyboard;
+			packageProductDependencies = (
+				F357BA6425AD6E0E0019D597 /* KeyboardKit */,
+				F357BA6F25AD6EA70019D597 /* KeyboardKitSwiftUI */,
+			);
+			productName = Keyboard;
+			productReference = F357BA5525AD6D520019D597 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -101,6 +228,9 @@
 					F357BA3D25AD6B040019D597 = {
 						CreatedOnToolsVersion = 12.2;
 					};
+					F357BA5425AD6D520019D597 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 				};
 			};
 			buildConfigurationList = F357BA3925AD6B040019D597 /* Build configuration list for PBXProject "Bord-iuchrach Gaidhlig" */;
@@ -112,11 +242,16 @@
 				Base,
 			);
 			mainGroup = F357BA3525AD6B030019D597;
+			packageReferences = (
+				F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
+				F357BA6E25AD6EA70019D597 /* XCRemoteSwiftPackageReference "KeyboardKitSwiftUI" */,
+			);
 			productRefGroup = F357BA3F25AD6B040019D597 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				F357BA3D25AD6B040019D597 /* Bord-iuchrach Gaidhlig */,
+				F357BA5425AD6D520019D597 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +266,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F357BA5325AD6D520019D597 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,12 +280,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F383245825AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */,
 				F357BA4425AD6B040019D597 /* ContentView.swift in Sources */,
-				F357BA4225AD6B040019D597 /* Bord_iuchrach_GaidhligApp.swift in Sources */,
+				F383245D25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */,
+				F357BA4225AD6B040019D597 /* BGApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F357BA5125AD6D520019D597 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3ED260A25B29D12009F4654 /* BGKeyboardView+Keyboards.swift in Sources */,
+				F3ED261A25B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift in Sources */,
+				F383245E25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */,
+				F383245925AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */,
+				F357BA5825AD6D530019D597 /* BGKeyboardViewController.swift in Sources */,
+				F3FAFCF325AD9DC100380F77 /* Keyboard.swift in Sources */,
+				F3ED261425B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift in Sources */,
+				F3ED260625B29CBF009F4654 /* BGKeyboardView.swift in Sources */,
+				F36CDC0E25B01285003D0D22 /* BGAutocompleteToolbar.swift in Sources */,
+				F3ED262625B29FF0009F4654 /* DemoKeyboardActionHandler.swift in Sources */,
+				F3ED262025B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F357BA5B25AD6D530019D597 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F357BA5425AD6D520019D597 /* Keyboard */;
+			targetProxy = F357BA5A25AD6D530019D597 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F357BA4B25AD6B0B0019D597 /* Debug */ = {
@@ -265,6 +435,7 @@
 		F357BA4E25AD6B0B0019D597 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -272,7 +443,7 @@
 				DEVELOPMENT_TEAM = XH437MA6D9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bord-iuchrach Gaidhlig/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +458,7 @@
 		F357BA4F25AD6B0B0019D597 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,13 +466,53 @@
 				DEVELOPMENT_TEAM = XH437MA6D9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bord-iuchrach Gaidhlig/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brennanium.Bord-iuchrach-Gaidhlig";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F357BA5E25AD6D530019D597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH437MA6D9;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brennanium.Bord-iuchrach-Gaidhlig.Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F357BA5F25AD6D530019D597 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XH437MA6D9;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brennanium.Bord-iuchrach-Gaidhlig.Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -327,7 +539,53 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		F357BA5D25AD6D530019D597 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F357BA5E25AD6D530019D597 /* Debug */,
+				F357BA5F25AD6D530019D597 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F357BA6E25AD6EA70019D597 /* XCRemoteSwiftPackageReference "KeyboardKitSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielsaidi/KeyboardKitSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F357BA6425AD6E0E0019D597 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+		F357BA6F25AD6EA70019D597 /* KeyboardKitSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F357BA6E25AD6EA70019D597 /* XCRemoteSwiftPackageReference "KeyboardKitSwiftUI" */;
+			productName = KeyboardKitSwiftUI;
+		};
+		F357BAAB25AD77620019D597 /* KeyboardKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
+			productName = KeyboardKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F357BA3625AD6B030019D597 /* Project object */;
 }
