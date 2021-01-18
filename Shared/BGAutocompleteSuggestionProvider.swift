@@ -9,12 +9,9 @@ import UIKit
 import KeyboardKit
 
 /**
- This demo provider simply returns the current word suffixed
- with "ly", "er" and "ter".
- 
  This class is shared between the demo app and all keyboards.
  */
-class DemoAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
+class BGAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
     public init(
         for controller: KeyboardInputViewController,
         trailingSpace: Bool = true)
@@ -44,7 +41,7 @@ public struct DemoAutocompleteSuggestion: AutocompleteSuggestion {
     public var additionalInfo: [String: Any] { [:] }
 }
 
-private extension DemoAutocompleteSuggestionProvider {
+private extension BGAutocompleteSuggestionProvider {
     
     func suggestions(for text: String) -> [DemoAutocompleteSuggestion] {
         if text == "a" {
