@@ -56,10 +56,7 @@ private extension BGKeyboardView {
     func buttonBuilder(action: KeyboardAction, size: CGSize) -> AnyView {
         switch action {
         case .space: return AnyView(SystemKeyboardSpaceButtonContent(localeText: "Gàidhlig", spaceText: "falamh"))
-//        case .newLine: return AnyView(
-//            SystemKeyboardButtonContent(action: .newLine, text: "tilleadh")
-//                .standardButtonStyle(for: .space, context: context)
-//                .keyboardAction(.newLine, context: context))
+        case .newLine: return AnyView(BGSystemKeyboardReturnButtonContent())
         default: return SystemKeyboard.standardButtonBuilder(action: action, keyboardSize: size)
         }
     }
