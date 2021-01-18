@@ -65,4 +65,15 @@ class BGKeyboardViewController: KeyboardInputViewController {
     override func resetAutocomplete() {
         autocompleteContext.suggestions = []
     }
+    
+    
+    override func textDidChange(_ textInput: UITextInput?) {
+        switch context.keyboardType {
+        case .alphabetic(let state):
+            KeyboardAction.shift(currentState: state).standardTapActionForController?(self)
+        default: break
+        }
+        
+        super.textDidChange(textInput)
+    }
 }
