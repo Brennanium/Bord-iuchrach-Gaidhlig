@@ -18,20 +18,16 @@ class BGKeyboardViewController: KeyboardInputViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup(with: keyboardView)
-        context.actionHandler = DemoKeyboardActionHandler(
+        //context = BGObservableKeyboardContext(from: context)
+        context.actionHandler = BGKeyboardActionHandler(
             inputViewController: self,
             toastContext: toastContext)
         context.keyboardAppearanceProvider = DemoKeyboardAppearanceProvider()
-//        context.keyboardLayoutProvider = StandardKeyboardLayoutProvider(
-//            leftSpaceAction: .keyboardType(.emojis),
-//            rightSpaceAction: .keyboardType(.images))
         
         context.keyboardInputSetProvider = DemoKeyboardInputSetProvider()
         
-        context.secondaryCalloutActionProvider = DemoSecondaryCalloutActionProvider()
-        
         SecondaryInputCalloutContext.shared = SecondaryInputCalloutContext(
-            actionProvider: context.secondaryCalloutActionProvider,
+            actionProvider: DemoSecondaryCalloutActionProvider(),
             context: context)
     }
     
@@ -53,7 +49,7 @@ class BGKeyboardViewController: KeyboardInputViewController {
     
     private lazy var autocompleteContext = ObservableAutocompleteContext()
     
-    private lazy var autocompleteProvider = DemoAutocompleteSuggestionProvider(for: self)
+    private lazy var autocompleteProvider = BGAutocompleteSuggestionProvider(for: self)
     
     override func performAutocomplete() {
         //guard let word = textDocumentProxy.currentWord else { return resetAutocomplete() }
