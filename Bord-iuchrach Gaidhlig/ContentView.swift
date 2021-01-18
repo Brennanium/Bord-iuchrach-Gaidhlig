@@ -6,15 +6,22 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
     @State var text: String = ""
     
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-                .padding()
-            TextField("Some test text", text: $text)
+        ScrollView {
+            VStack {
+                Text("Hello, world!")
+                    .padding()
+                TextField("Some test text", text: $text)
+                    .padding()
+                    .background(Color(white: 0.9))
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                    .padding()
+            }
         }
         
     }

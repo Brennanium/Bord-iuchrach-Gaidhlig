@@ -5,7 +5,7 @@
 //  Created by Brennan Drew on 1/12/21.
 //
 
-import Foundation
+import UIKit
 import KeyboardKit
 
 
@@ -13,7 +13,7 @@ public class DemoKeyboardInputSetProvider: KeyboardInputSetProvider {
     public func alphabeticInputSet(for context: KeyboardContext) -> AlphabeticKeyboardInputSet {
         AlphabeticKeyboardInputSet(inputRows: [
             ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
-            ["a", "s", "d", "f", "g", "h", "j", "k", "l", specialCharacter(for: context)],
+            ["a", "s", "d", "f", "g", "h", "j", "k", "l", Self.specialCharacter(proxy: context.textDocumentProxy)],
             ["z", "x", "c", "v", "b", "n", "m"]
         ]) 
     }
@@ -28,8 +28,7 @@ public class DemoKeyboardInputSetProvider: KeyboardInputSetProvider {
     
     
     
-    func specialCharacter(for context: KeyboardContext) -> String {
-        let proxy = context.textDocumentProxy
+    static func specialCharacter(proxy: UITextDocumentProxy) -> String {
         if proxy.isCursorAtNewSentence ||
             proxy.isCursorAtNewWord {
             return "’"
