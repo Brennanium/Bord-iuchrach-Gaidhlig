@@ -39,7 +39,7 @@ class BGKeyboardViewController: KeyboardInputViewController {
     private let toastContext = KeyboardToastContext()
     
     private var keyboardView: some View {
-        BGKeyboardView(controller: self)
+        BGKeyboardView()
             .environmentObject(autocompleteContext)
             .environmentObject(toastContext)
     }
