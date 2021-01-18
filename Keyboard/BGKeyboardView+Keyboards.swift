@@ -24,7 +24,10 @@ extension BGKeyboardView {
     
     var systemKeyboard: some View {
         VStack(spacing: 0) {
-            AutocompleteToolbar(buttonBuilder: autocompleteButtonBuilder).frame(height: 50)
+            AutocompleteToolbar(
+                buttonBuilder: autocompleteButtonBuilder,
+                replacementAction: autocompleteReplacementAction)
+                .frame(height: 50)
             Keyboard(layout: systemKeyboardLayout, buttonBuilder: buttonBuilder)
         }
     }
@@ -59,6 +62,17 @@ private extension BGKeyboardView {
 //                .keyboardAction(.newLine, context: context))
         default: return SystemKeyboard.standardButtonBuilder(action: action, keyboardSize: size)
         }
+    }
+    
+    func autocompleteReplacementAction(for suggestion: AutocompleteSuggestion, context: KeyboardContext) {
+        let proxy = context.textDocumentProxy
+        let replacement = AutocompleteToolbar.standardReplacement(for: suggestion, context: context)
+        if proxy.currentWord != nil {
+            proxy.replaceCurrentWord(with: replacement)
+        } else {
+            proxy.insertText(replacement)
+        }
+        context.actionHandler.handle(.tap, on: .character(""))
     }
 }
 
