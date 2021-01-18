@@ -18,17 +18,33 @@ import UIKit
  handler inherit this class and adds functionality on top of
  the base functionality.
  */
-class DemoKeyboardActionHandlerBase: StandardKeyboardActionHandler {
+class BGKeyboardActionHandler: StandardKeyboardActionHandler {
     
     
     // MARK: - Initialization
     
-//    init(inputViewController: KeyboardInputViewController) {
-//        super.init(
-//            inputViewController: inputViewController,
-//            hapticConfiguration: .noFeedback
-//        )
-//    }
+    public init(
+        inputViewController: BGKeyboardViewController,
+        toastContext: KeyboardToastContext) {
+        self.toastContext = toastContext
+        super.init(inputViewController: inputViewController)
+    }
+    
+    
+    private let toastContext: KeyboardToastContext
+    
+    override func handle(_ gesture: KeyboardGesture, on action: KeyboardAction, sender: Any?) {
+        guard let gestureAction = self.action(for: gesture, on: action, sender: sender) else { return }
+        gestureAction()
+        refreshView(for: action)
+        triggerAnimation(for: gesture, on: action, sender: sender)
+        triggerAudioFeedback(for: gesture, on: action, sender: sender)
+        triggerHapticFeedback(for: gesture, on: action, sender: sender)
+        tryEndSentence(after: gesture, on: action)
+        triggerAutocomplete() //switched tryEndSentence and triggerAutocomplete
+        tryChangeKeyboardType(after: gesture, on: action)
+        tryRegisterEmoji(after: gesture, on: action)
+    }
     
     override func longPressAction(for action: KeyboardAction, sender: Any?) -> GestureAction? {
         switch action {
@@ -44,6 +60,17 @@ class DemoKeyboardActionHandlerBase: StandardKeyboardActionHandler {
         }
     }
     
+    private func refreshView(for action: KeyboardAction) {
+        guard !action.isShift else { return }
+        guard let keyboardType = inputViewController?.context.keyboardType else { return }
+        
+        switch keyboardType {
+        case .alphabetic(let state):
+            KeyboardAction.shift(currentState: state).standardTapActionForController?(inputViewController)
+        default: break
+        }
+        
+    }
     
     // MARK: - Functions
     
@@ -53,7 +80,7 @@ class DemoKeyboardActionHandlerBase: StandardKeyboardActionHandler {
      that you use in real apps, e.g. `UIAlertController`.
      */
     func alert(_ message: String) {
-        assertionFailure("You must override alert")
+        toastContext.present(message)
     }
     
     func copyImage(_ image: UIImage) {
