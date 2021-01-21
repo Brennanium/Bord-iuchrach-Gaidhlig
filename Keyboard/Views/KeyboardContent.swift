@@ -1,5 +1,5 @@
 //
-//  Keyboard.swift
+//  KeyboardContent.swift
 //  Keyboard
 //
 //  Created by Brennan Drew on 1/12/21.
@@ -9,7 +9,7 @@ import SwiftUI
 import KeyboardKit
 import KeyboardKitSwiftUI
 
-struct Keyboard: View {
+struct KeyboardContent: View {
     public init(
         layout: KeyboardLayout,
         //dimensions: SystemKeyboardDimensions,
@@ -20,7 +20,7 @@ struct Keyboard: View {
     }
     
     private let buttonBuilder: ButtonBuilder
-    private let dimensions: SystemKeyboardDimensions
+    private let dimensions: KeyboardDimensions
     private let rows: KeyboardActionRows
     
     @State private var size: CGSize = .zero
@@ -41,7 +41,7 @@ struct Keyboard: View {
     }
 }
 
-extension Keyboard {
+extension KeyboardContent {
 
     /**
      This is the standard `buttonBuilder`, that will be used
@@ -52,33 +52,49 @@ extension Keyboard {
     }
 }
 
-private extension Keyboard {
+private extension KeyboardContent {
 
     func row(at index: Int, actions: KeyboardActionRow) -> some View {
         HStack(spacing: 0) {
-            rowEdgeSpacer(at: index)
+            secondRowEdgeSpacer(at: index)
             ForEach(Array(actions.enumerated()), id: \.offset) {
-                if($0.element.isShift) {
-                    SystemKeyboardButtonRowItem(action: $0.element, buttonContent: buttonBuilder($0.element, size), keyboardSize: size)
-                    Spacer(minLength: thirdRowPadding)
+                let rowItem = SystemKeyboardButtonRowItem(
+                    action: $0.element,
+                    buttonContent: buttonBuilder($0.element, size),
+                    dimensions: dimensions,
+                    keyboardSize: size)
+                
+                if $0.element.isShift {
+                    rowItem
+                    thirdRowEdgeSpacer(at: index) //Spacer(minLength: thirdRowPadding)
+                } else if case .keyboardType = $0.element {
+                    rowItem
+                    thirdRowEdgeSpacer(at: index)
                 } else if ($0.element == .backspace) {
-                    Spacer(minLength: thirdRowPadding)
-                    SystemKeyboardButtonRowItem(action: $0.element, buttonContent: buttonBuilder($0.element, size), keyboardSize: size)
+                    thirdRowEdgeSpacer(at: index) //Spacer(minLength: thirdRowPadding)
+                    rowItem
                 } else {
-                    SystemKeyboardButtonRowItem(action: $0.element, buttonContent: buttonBuilder($0.element, size), keyboardSize: size)
+                    rowItem
                 }
             }
-            rowEdgeSpacer(at: index)
+            secondRowEdgeSpacer(at: index)
         }
     }
     
     @ViewBuilder
-    func rowEdgeSpacer(at index: Int) -> some View {
+    func secondRowEdgeSpacer(at index: Int) -> some View {
         if index == 1 {
             Spacer(minLength: secondRowPadding)
-        } else if index == 2 {
-            //Spacer(minLength: thirdRowPadding)
+        } else {
             EmptyView()
+        }
+    }
+    
+    @ViewBuilder
+    func thirdRowEdgeSpacer(at index: Int) -> some View {
+        if index == 2 {
+            Spacer(minLength: thirdRowPadding)
+            //EmptyView()
         }else {
             EmptyView()
         }
@@ -96,15 +112,16 @@ private extension Keyboard {
     
     var thirdRowPadding: CGFloat {
         guard UIDevice.current.userInterfaceIdiom == .phone else { return 0 }
+        guard rows[2].count <= 9 else { return 0 }
         switch context.keyboardType {
-        case .alphabetic: return 10
+        case .alphabetic, .numeric, .symbolic: return 10
         default: return 0
         }
     }
 }
 //struct Keyboard_Previews: PreviewProvider {
 //    static var previews: some View {
-//        Keyboard()
+//        KeyboardContent()
 //    }
 //}
 
