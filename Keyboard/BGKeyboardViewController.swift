@@ -1,5 +1,5 @@
 //
-//  KeyboardViewController.swift
+//  BGKeyboardViewController.swift
 //  Keyboard
 //
 //  Created by Brennan Drew on 1/11/21.
@@ -17,6 +17,8 @@ class BGKeyboardViewController: KeyboardInputViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        primaryLanguage = "gd"
+        
         setup(with: keyboardView)
         //context = BGObservableKeyboardContext(from: context)
         context.actionHandler = BGKeyboardActionHandler(
@@ -24,11 +26,13 @@ class BGKeyboardViewController: KeyboardInputViewController {
             toastContext: toastContext)
         context.keyboardAppearanceProvider = BGKeyboardAppearanceProvider(for: self)
         
-        context.keyboardInputSetProvider = DemoKeyboardInputSetProvider()
+        context.keyboardInputSetProvider = BGKeyboardInputSetProvider()
         
         SecondaryInputCalloutContext.shared = SecondaryInputCalloutContext(
-            actionProvider: DemoSecondaryCalloutActionProvider(),
+            actionProvider: BGSecondaryCalloutActionProvider(),
             context: context)
+        
+        performAutocomplete()
     }
     
     

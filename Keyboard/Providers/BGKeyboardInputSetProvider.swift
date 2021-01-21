@@ -9,7 +9,7 @@ import UIKit
 import KeyboardKit
 
 
-public class DemoKeyboardInputSetProvider: KeyboardInputSetProvider {
+public class BGKeyboardInputSetProvider: KeyboardInputSetProvider {
     public func alphabeticInputSet(for context: KeyboardContext) -> AlphabeticKeyboardInputSet {
         AlphabeticKeyboardInputSet(inputRows: [
             ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
@@ -34,7 +34,7 @@ public class DemoKeyboardInputSetProvider: KeyboardInputSetProvider {
             return "’"
         }
         //last character is a vowel
-        if "AEIOUaeiu".contains((proxy.documentContextBeforeInput ?? "").suffix(1)) {
+        if "AEIOUaeiou".contains((proxy.documentContextBeforeInput ?? "").suffix(1)) {
             return "\u{0300}"
         }
         return "’";

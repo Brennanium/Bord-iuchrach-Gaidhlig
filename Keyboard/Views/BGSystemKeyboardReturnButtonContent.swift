@@ -33,7 +33,7 @@ public struct BGSystemKeyboardReturnButtonContent: View {
 private extension BGSystemKeyboardReturnButtonContent {
     
     var buttonText: String? {
-        if let appearance = appearance as? DemoKeyboardAppearanceProvider {
+        if let appearance = appearance as? BGKeyboardAppearanceProvider {
             return appearance.returnText(proxy: context.textDocumentProxy) ?? "tilleadh"
         }
         return appearance.text(for: action)

@@ -1,5 +1,5 @@
 //
-//  DemoSecondaryCalloutActionProvider.swift
+//  BGSecondaryCalloutActionProvider.swift
 //  Bord-iuchrach Gaidhlig
 //
 //  Created by Brennan Drew on 1/12/21.
@@ -11,7 +11,7 @@ import KeyboardKit
  This provider provides secondary callouts with the standard
  secondary callout actions for the provided action.
  */
-open class DemoSecondaryCalloutActionProvider: SecondaryCalloutActionProvider {
+open class BGSecondaryCalloutActionProvider: SecondaryCalloutActionProvider {
     
     public init() {}
     
@@ -55,7 +55,7 @@ private extension String {
         switch self {
         case "-": return "-–—•"
         case "/": return "/\\"
-        case "&": return "&§"
+        case "&": return "&\u{2510}§"
         case "”": return "\"”“„»«"
         case ".": return ".…"
         case "?": return "?¿"
