@@ -1,6 +1,10 @@
 # Bòrd-iuchrach Gàidhlig
 
 A custom keyboard extension app for Scottish Gaelic which tries to mimic the iOS system keyboard behaviors and appearance.  
+<p align="leading">
+    <img src ="Resources/Keyboard Picture.png" width=400 />
+</p>
+
 
 ## Features
 
