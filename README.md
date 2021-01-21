@@ -24,10 +24,13 @@ It’s really important for minority/endangered languages to have representation
 
 ## Method
 
-This app is written entirely in Swift and almost entirely uses SwiftUI, though it also uses a little bit of UIKit.  I am using Daniel Saidi's excellent KeyboardKit open source library for making reliable and very functional custom keyboard extensions which mimic the system keyboards.  It’s currently in the process of changing from using UIKit to using SwiftUI.  All of the change made a great opportunity for me to contribute to the project as I learn about how it works.
+This app is written entirely in Swift and almost entirely uses SwiftUI, though it also uses a little bit of UIKit.  I am using Daniel Saidi's excellent [KeyboardKit][KeyboardKit] open source library for making reliable and very functional custom keyboard extensions which mimic the system keyboards.  It’s currently in the process of changing from using UIKit to using SwiftUI.  All of the change made a great opportunity for me to contribute to the project as I learn about how it works.
 
 ## Future features
 
 - iPad Layout: the iPad layout is currently too rough as it was not the main focus when considering layout
 - Autocomplete Suggestions: the autocomplete suggestions are currently very basic; adding a full autocorrect and autocomplete system is a must for a future version
 - Making input set and autocomplete/correct easily swappable/trainable for new languages, with minimal change to the code; for non-programmers.  Ideally for other minority, endangered, or indigenous languages.
+
+
+[KeyboardKit]: https://github.com/danielsaidi/KeyboardKit
