@@ -41,9 +41,9 @@ class BGKeyboardActionHandler: StandardKeyboardActionHandler {
         triggerAudioFeedback(for: gesture, on: action, sender: sender)
         triggerHapticFeedback(for: gesture, on: action, sender: sender)
         tryEndSentence(after: gesture, on: action)
-        triggerAutocomplete() //switched tryEndSentence and triggerAutocomplete
         tryChangeKeyboardType(after: gesture, on: action)
         tryRegisterEmoji(after: gesture, on: action)
+        triggerAutocomplete() //switched tryEndSentence and triggerAutocomplete, then put at end
     }
     
     override func longPressAction(for action: KeyboardAction, sender: Any?) -> GestureAction? {
@@ -56,6 +56,29 @@ class BGKeyboardActionHandler: StandardKeyboardActionHandler {
     override func tapAction(for action: KeyboardAction, sender: Any?) -> GestureAction? {
         switch action {
         case .image(_, _, let imageName): return { [weak self] in self?.copyImage(UIImage(named: imageName)!) }
+        case .character(let char):
+            guard char == "\u{0300}" else { fallthrough }
+            return { [weak self] in
+                let proxy = self?.inputViewController?.textDocumentProxy
+                let substring = proxy?.documentContextBeforeInput?.suffix(1)
+                if let substring = substring {
+                    var letter = String(substring)
+                    
+                    let uppercased = Character(letter).isUppercase
+                    switch letter.lowercased() {
+                    case "a": letter = "à"
+                    case "e": letter = "è"
+                    case "i": letter = "ì"
+                    case "o": letter = "ò"
+                    case "u": letter = "ù"
+                    default: return
+                    }
+                    if uppercased { letter = letter.uppercased() }
+                    proxy?.deleteBackward(times: 1)
+                    proxy?.insertText(letter)
+                }
+                
+            }
         default: return super.tapAction(for: action, sender: sender)
         }
     }
