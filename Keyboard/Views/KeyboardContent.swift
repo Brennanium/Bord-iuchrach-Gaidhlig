@@ -12,10 +12,10 @@ import KeyboardKitSwiftUI
 struct Keyboard: View {
     public init(
         layout: KeyboardLayout,
-        dimensions: SystemKeyboardDimensions = SystemKeyboardDimensions(shortButtonWidth: .standardKeyboardRowHeight()),//SystemKeyboardDimensions(longButtonWidth: .standardKeyboardRowHeight() * 2, shortButtonWidth: .standardKeyboardRowHeight()),
+        //dimensions: SystemKeyboardDimensions,
         buttonBuilder: @escaping ButtonBuilder = Self.standardButtonBuilder) {
         self.rows = layout.actionRows
-        self.dimensions = dimensions
+        self.dimensions = BGKeyboardDimensions()
         self.buttonBuilder = buttonBuilder
     }
     
