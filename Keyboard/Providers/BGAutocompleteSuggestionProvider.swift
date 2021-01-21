@@ -12,12 +12,8 @@ import KeyboardKit
  This class is shared between the demo app and all keyboards.
  */
 class BGAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
-    public init(
-        for controller: KeyboardInputViewController,
-        trailingSpace: Bool = true)
-    {
+    public init(for controller: KeyboardInputViewController) {
         self.controller = controller
-        space = trailingSpace ? " " : "";
     }
     
     weak private var controller: KeyboardInputViewController?
@@ -25,7 +21,10 @@ class BGAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
     private var textDocumentProxy: UITextDocumentProxy? {
         controller?.textDocumentProxy
     }
-    private var space: String
+    
+    private var context: KeyboardContext? {
+        controller?.context
+    }
     
     func autocompleteSuggestions(for text: String, completion: AutocompleteResponse) {
         //guard text.count > 0 else { return completion(.success([])) }
@@ -33,7 +32,7 @@ class BGAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
     }
 }
 
-public struct DemoAutocompleteSuggestion: AutocompleteSuggestion {
+public struct BGAutocompleteSuggestion: AutocompleteSuggestion {
     
     public var replacement: String
     public var title: String { replacement }
@@ -43,7 +42,7 @@ public struct DemoAutocompleteSuggestion: AutocompleteSuggestion {
 
 private extension BGAutocompleteSuggestionProvider {
     
-    func suggestions(for text: String) -> [DemoAutocompleteSuggestion] {
+    func suggestions(for text: String) -> [BGAutocompleteSuggestion] {
         if text == "a" {
             return suggestions([
                 "à",
@@ -88,12 +87,37 @@ private extension BGAutocompleteSuggestionProvider {
         
     }
     
-    func suggestions(_ words: [String]) -> [DemoAutocompleteSuggestion] {
-        words.map { word in suggestion(word + space)}
+    func suggestions(_ words: [String]) -> [BGAutocompleteSuggestion] {
+        words.map { word in suggestion(word)}
     }
     
-    func suggestion(_ word: String, _ subtitle: String? = nil) -> DemoAutocompleteSuggestion {
-        DemoAutocompleteSuggestion(replacement: word, subtitle: subtitle)
+    func suggestion(_ word: String, _ subtitle: String? = nil) -> BGAutocompleteSuggestion {
+        BGAutocompleteSuggestion(replacement: captialization(word), subtitle: subtitle)
+    }
+    
+    func captialization(_ word: String) -> String {
+        guard let keyboardType = context?.keyboardType else { return word }
+        
+        switch keyboardType {
+        case .alphabetic(let state):
+            switch state {
+            case .capsLocked: return word.uppercased()
+            //case .uppercased: return word//.firstLetterCapitalized
+            //case .lowercased: return word.lowercased()
+            default: return word
+            }
+        default: return word
+        }
     }
 }
 
+
+
+private extension String {
+    var firstLetterCapitalized: String {
+        if prefix(1) == "’" && count > 1 {
+            return prefix(2).capitalized + dropFirst(2)
+        }
+        return prefix(1).capitalized + dropFirst()
+    }
+}
