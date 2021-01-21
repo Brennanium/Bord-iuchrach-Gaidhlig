@@ -14,11 +14,35 @@ import SwiftUI
  This provider inherits `StandardKeyboardAppearanceProvider`
  and adds demo-specific functionality to it.
  */
-class DemoKeyboardAppearanceProvider: StandardKeyboardAppearanceProvider {
+class BGKeyboardAppearanceProvider: StandardKeyboardAppearanceProvider {
+    
+    public init(for controller: KeyboardInputViewController) {
+        self.controller = controller
+    }
+    
+    weak private var controller: KeyboardInputViewController?
+    
+    private var shiftState: KeyboardShiftState? {
+        guard let type = controller?.context.keyboardType else { return nil }
+        switch type {
+        case .alphabetic(let state): return state
+        default: return nil
+        }
+    }
     
     override func font(for action: KeyboardAction) -> UIFont {
         switch action {
-        case .space, .newLine: return .preferredFont(forTextStyle: .body)
+        case .space, .newLine: return .preferredFont(forTextStyle: .callout)
+        case .shift: return .systemFont(ofSize: 19)
+        case .backspace: return .preferredFont(forTextStyle: .title3)
+        case .keyboardType: return .preferredFont(forTextStyle: .body)
+        case .character(let char):
+            guard (char.first ?? Character("")).isLetter else { fallthrough }
+            guard let state = shiftState else { fallthrough }
+            switch state {
+            case .lowercased: return .systemFont(ofSize: 24)
+            default: return .systemFont(ofSize: 23)
+            }
         default: return super.font(for: action)
         }
     }
@@ -26,6 +50,13 @@ class DemoKeyboardAppearanceProvider: StandardKeyboardAppearanceProvider {
     override func fontWeight(for action: KeyboardAction, context: KeyboardContext) -> UIFont.Weight? {
         switch action {
         case .newLine: return .regular
+//        case .character(let char):
+//            guard !"\u{0300}’".contains(char) else { fallthrough }
+//            guard let state = shiftState else { fallthrough }
+//            switch state {
+//            case .lowercased: return .light
+//            default: return nil
+//            }
         default:
             let hasImage = action.standardButtonImage(for: context) != nil
             return hasImage ? .light : nil

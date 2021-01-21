@@ -22,7 +22,7 @@ class BGKeyboardViewController: KeyboardInputViewController {
         context.actionHandler = BGKeyboardActionHandler(
             inputViewController: self,
             toastContext: toastContext)
-        context.keyboardAppearanceProvider = DemoKeyboardAppearanceProvider()
+        context.keyboardAppearanceProvider = BGKeyboardAppearanceProvider(for: self)
         
         context.keyboardInputSetProvider = DemoKeyboardInputSetProvider()
         
