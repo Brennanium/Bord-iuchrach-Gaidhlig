@@ -9,22 +9,38 @@ import UIKit
 import KeyboardKit
 
 
-public class BGKeyboardInputSetProvider: KeyboardInputSetProvider {
-    public func alphabeticInputSet(for context: KeyboardContext) -> AlphabeticKeyboardInputSet {
-        AlphabeticKeyboardInputSet(inputRows: [
-            ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"],
-            ["a", "s", "d", "f", "g", "h", "j", "k", "l", Self.specialCharacter(proxy: context.textDocumentProxy)],
-            ["z", "x", "c", "v", "b", "n", "m"]
+public class BGKeyboardInputSetProvider: DeviceSpecificInputSetProvider, LocalizedService {
+    
+    public init(device: UIDevice = .current) {
+        self.device = device
+    }
+    public var device: UIDevice
+    public let localeKey: String = "gd"
+    
+    public func alphabeticInputSet() -> AlphabeticKeyboardInputSet {
+        AlphabeticKeyboardInputSet(rows: [
+            "qwertyuiop".chars,
+            ["a", "s", "d", "f", "g", "h", "j", "k", "l", Self.specialCharacter(proxy: KeyboardInputViewController.shared.textDocumentProxy)],
+            row(phone: "zxcvbnm", pad: "zxcvbnm,.")
         ]) 
     }
     
-    public func numericInputSet(for context: KeyboardContext) -> NumericKeyboardInputSet {
-        KeyboardInputSet.standardNumeric(currency: "£")
+    public func numericInputSet() -> NumericKeyboardInputSet {
+        NumericKeyboardInputSet(rows: [
+            "1234567890".chars,
+            row(phone: "-/:;()£&@“", pad: "@#£&*()’”"),
+            row(phone: ".,?!’", pad: "%-+=/;:,.")
+        ])
     }
     
-    public func symbolicInputSet(for context: KeyboardContext) -> SymbolicKeyboardInputSet {
-        KeyboardInputSet.standardSymbolic(center: ["_", "\\", "|", "~", "<", ">", "$", "€", "¥", "•"])
+    public func symbolicInputSet() -> SymbolicKeyboardInputSet {
+        SymbolicKeyboardInputSet(rows: [
+            row(phone: "[]{}#%^*+=", pad: "1234567890"),
+            row(phone: "_\\|~<>$€¥•", pad: "$€¥_^[]{}"),
+            row(phone: ".,?!’", pad: "§|~…\\<>!?")
+        ])
     }
+
     
     
     
@@ -42,3 +58,7 @@ public class BGKeyboardInputSetProvider: KeyboardInputSetProvider {
 }
 
 
+extension String {
+    
+    var chars: [String] { self.map { String($0) } }
+}

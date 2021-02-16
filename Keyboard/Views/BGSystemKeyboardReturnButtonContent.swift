@@ -7,7 +7,6 @@
 
 import UIKit
 import KeyboardKit
-import KeyboardKitSwiftUI
 import SwiftUI
 
 /**
@@ -17,8 +16,9 @@ import SwiftUI
  */
 public struct BGSystemKeyboardReturnButtonContent: View {
     
+    var appearance: KeyboardAppearance
+    
     private var action: KeyboardAction { .newLine }
-    private var appearance: KeyboardAppearanceProvider { context.keyboardAppearanceProvider }
     
     @EnvironmentObject var context: ObservableKeyboardContext
     
@@ -36,6 +36,6 @@ private extension BGSystemKeyboardReturnButtonContent {
         if let appearance = appearance as? BGKeyboardAppearanceProvider {
             return appearance.returnText(proxy: context.textDocumentProxy) ?? "tilleadh"
         }
-        return appearance.text(for: action)
+        return appearance.buttonText(for: action)
     }
 }

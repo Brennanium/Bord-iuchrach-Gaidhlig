@@ -7,7 +7,6 @@
 
 import UIKit
 import KeyboardKit
-import KeyboardKitSwiftUI
 import SwiftUI
 import Combine
 
@@ -15,7 +14,7 @@ class BGKeyboardViewController: KeyboardInputViewController {
 
     // MARK: - View Controller Lifecycle
     
-    override func viewDidLoad() {
+    /* override func viewDidLoad() {
         super.viewDidLoad()
         primaryLanguage = "gd"
         
@@ -33,6 +32,24 @@ class BGKeyboardViewController: KeyboardInputViewController {
             context: context)
         
         performAutocomplete()
+    } */
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        primaryLanguage = "gd"
+        
+        keyboardActionHandler = BGKeyboardActionHandler(
+            inputViewController: self,
+            toastContext: toastContext)
+        keyboardInputSetProvider = BGKeyboardInputSetProvider()
+        keyboardLayoutProvider = StandardKeyboardLayoutProvider(
+            inputSetProvider: keyboardInputSetProvider,
+            dictationReplacement: .keyboardType(.emojis))
+        keyboardSecondaryCalloutActionProvider = BGSecondaryCalloutActionProvider()
+        setup(with: keyboardView)
+        
+        performAutocomplete()
     }
     
     
@@ -43,16 +60,16 @@ class BGKeyboardViewController: KeyboardInputViewController {
     private let toastContext = KeyboardToastContext()
     
     private var keyboardView: some View {
-        BGKeyboardView()
+        BGKeyboardView(
+            actionHandler: keyboardActionHandler,
+            appearance: keyboardAppearance,
+            layoutProvider: keyboardLayoutProvider)
             .environmentObject(autocompleteContext)
             .environmentObject(toastContext)
     }
     
     
     // MARK: - Autocomplete
-    
-    private lazy var autocompleteContext = ObservableAutocompleteContext()
-    
     private lazy var autocompleteProvider = BGAutocompleteSuggestionProvider(for: self)
     
     override func performAutocomplete() {
@@ -72,9 +89,9 @@ class BGKeyboardViewController: KeyboardInputViewController {
     
     
     override func textDidChange(_ textInput: UITextInput?) {
-        switch context.keyboardType {
+        switch keyboardType {
         case .alphabetic(let state):
-            KeyboardAction.shift(currentState: state).standardTapActionForController?(self)
+            KeyboardAction.shift(currentState: state).standardTapAction?(self)
         default: break
         }
         

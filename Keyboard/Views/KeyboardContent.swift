@@ -7,51 +7,89 @@
 
 import SwiftUI
 import KeyboardKit
-import KeyboardKitSwiftUI
 
 struct KeyboardContent: View {
     public init(
         layout: KeyboardLayout,
-        //dimensions: SystemKeyboardDimensions,
+        appearance: KeyboardAppearance,
+        actionHandler: KeyboardActionHandler,
+        inputCalloutStyle: InputCalloutStyle? = nil,
+        secondaryInputCalloutStyle: SecondaryInputCalloutStyle? = nil,
+        width: CGFloat = KeyboardInputViewController.shared.view.frame.width,
         buttonBuilder: @escaping ButtonBuilder = Self.standardButtonBuilder) {
-        self.rows = layout.actionRows
-        self.dimensions = BGKeyboardDimensions()
+        self.layout = layout
+        self.actionHandler = actionHandler
+        self.appearance = appearance
+        self.inputCalloutStyle = inputCalloutStyle
+        self.secondaryInputCalloutStyle = secondaryInputCalloutStyle
         self.buttonBuilder = buttonBuilder
+        self.keyboardWidth = width
     }
     
+    private let actionHandler: KeyboardActionHandler
+    private let appearance: KeyboardAppearance
     private let buttonBuilder: ButtonBuilder
-    private let dimensions: KeyboardDimensions
-    private let rows: KeyboardActionRows
+    private let inputCalloutStyle: InputCalloutStyle?
+    private var keyboardWidth: CGFloat
+    private let layout: KeyboardLayout
+    private let secondaryInputCalloutStyle: SecondaryInputCalloutStyle?
     
-    @State private var size: CGSize = .zero
-    @EnvironmentObject var context: ObservableKeyboardContext
     
-    public typealias ButtonBuilder = (KeyboardAction, KeyboardSize) -> AnyView
-    public typealias KeyboardSize = CGSize
+    @EnvironmentObject private var context: ObservableKeyboardContext
+    
+    public typealias ButtonBuilder = (KeyboardAction) -> AnyView
+    
     
     public var body: some View {
         VStack(spacing: 0) {
-            ForEach(rows.enumerated().map { $0 }, id: \.offset) {
-                row(at: $0.offset, actions: $0.element)
-            }
+            rows(for: layout)
         }
-        .bindSize(to: $size)
-        .inputCallout(style: .systemStyle(for: context))
-        .secondaryInputCallout(for: context, style: .systemStyle(for: context))
+        .inputCallout(style: inputCalloutStyle ?? .systemStyle(for: context))
+        .secondaryInputCallout(style: secondaryInputCalloutStyle ?? .systemStyle(for: context))
     }
 }
 
 extension KeyboardContent {
-
+    
     /**
      This is the standard `buttonBuilder`, that will be used
      when no custom builder is provided to the view.
      */
-    static func standardButtonBuilder(action: KeyboardAction, keyboardSize: KeyboardSize) -> AnyView {
+    static func standardButtonBuilder(action: KeyboardAction) -> AnyView {
         AnyView(SystemKeyboardButtonContent(action: action))
     }
 }
 
+
+private extension KeyboardContent {
+    func rows(for layout: KeyboardLayout) -> some View {
+        let inputWidth = layout.inputWidth(for: keyboardWidth)
+        return ForEach(layout.items.enumerated().map { $0 }, id: \.offset) {
+            row(for: layout, items: $0.element, inputWidth: inputWidth)
+        }
+    }
+    
+    func row(for layout: KeyboardLayout, items: KeyboardLayoutItemRow, inputWidth: CGFloat) -> some View {
+        HStack(spacing: 0) {
+            ForEach(Array(items.enumerated()), id: \.offset) {
+                rowItem(for: layout, item: $0.element, inputWidth: inputWidth)
+            }
+        }
+    }
+    
+    func rowItem(for layout: KeyboardLayout, item: KeyboardLayoutItem, inputWidth: CGFloat) -> some View {
+        buttonBuilder(item.action)
+            .frame(maxWidth: .infinity)
+            .frame(height: item.size.height - item.insets.top - item.insets.bottom)
+            .rowItemWidth(for: item, totalWidth: keyboardWidth, referenceWidth: inputWidth)
+            .keyboardButtonStyle(for: item.action, appearance: appearance)
+            .padding(item.insets)
+            .background(Color.clearInteractable)
+            .keyboardGestures(for: item.action, actionHandler: actionHandler)
+    }
+}
+
+/*
 private extension KeyboardContent {
 
     func row(at index: Int, actions: KeyboardActionRow) -> some View {
@@ -174,3 +212,4 @@ private extension View {
         return Color.clear
     }
 }
+*/

@@ -1,3 +1,6 @@
+//redo and fix input for if text is nil
+
+
 //
 //  AutocompleteToolbar.swift
 //  KeyboardKit
@@ -5,7 +8,7 @@
 //  Created by Daniel Saidi on 2020-09-13.
 //  Copyright © 2020 Daniel Saidi. All rights reserved.
 //
-
+/*
 import KeyboardKit
 import KeyboardKitSwiftUI
 import SwiftUI
@@ -139,3 +142,4 @@ struct BGAutocompleteToolbar_Previews: PreviewProvider {
         BGAutocompleteToolbar()
     }
 }
+*/

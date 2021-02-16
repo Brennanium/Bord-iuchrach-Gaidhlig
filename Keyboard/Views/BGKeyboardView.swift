@@ -8,7 +8,6 @@
 
 import SwiftUI
 import KeyboardKit
-import KeyboardKitSwiftUI
 
 /**
  This view is the main view that is used by the extension by
@@ -16,18 +15,24 @@ import KeyboardKitSwiftUI
  */
 struct BGKeyboardView: View {
     
-    @Environment(\.colorScheme) var colorScheme: ColorScheme
-    @EnvironmentObject var context: ObservableKeyboardContext
+    var actionHandler: KeyboardActionHandler
+    var appearance: KeyboardAppearance
+    var layoutProvider: KeyboardLayoutProvider
+    
+    @EnvironmentObject var autocompleteContext: ObservableAutocompleteContext
+    @EnvironmentObject var keyboardContext: ObservableKeyboardContext
     @EnvironmentObject var toastContext: KeyboardToastContext
     
     var body: some View {
-        keyboardView
-            .keyboardToast(isActive: $toastContext.isActive, content: toastContext.content, background: toastBackground)
+        keyboardView.keyboardToast(
+            context: toastContext,
+            background: toastBackground)
     }
+    
     
     @ViewBuilder
     var keyboardView: some View {
-        switch context.keyboardType {
+        switch keyboardContext.keyboardType {
         case .alphabetic, .numeric, .symbolic: systemKeyboard
         default: Button("???", action: switchToDefaultKeyboard)
         }
@@ -36,16 +41,13 @@ struct BGKeyboardView: View {
     
     var systemKeyboard: some View {
         VStack(spacing: 0) {
-            AutocompleteToolbar(
-                buttonBuilder: autocompleteButtonBuilder,
-                replacementAction: autocompleteReplacementAction)
-                .frame(height: 50)
-            KeyboardContent(layout: systemKeyboardLayout, buttonBuilder: buttonBuilder)
+            autocompleteBar
+            KeyboardContent(
+                layout: layoutProvider.keyboardLayout(for: keyboardContext),
+                appearance: appearance,
+                actionHandler: actionHandler,
+                buttonBuilder: buttonBuilder)
         }
-    }
-    
-    var systemKeyboardLayout: KeyboardLayout {
-        context.keyboardLayoutProvider.keyboardLayout(for: context)
     }
     
     var toastBackground: some View {
@@ -60,13 +62,45 @@ struct BGKeyboardView: View {
 
 private extension BGKeyboardView {
     
+    func changeLocale(to locale: LocaleKey) {
+        DispatchQueue.main.async {
+            KeyboardInputViewController.shared.changeKeyboardLocale(to: locale.locale)
+        }
+    }
+    
+    func localeButton(title: String, locale: LocaleKey) -> some View {
+        Button(title) {
+            changeLocale(to: locale)
+        }
+    }
+    
     func switchToDefaultKeyboard() {
-        context.actionHandler
+        actionHandler
             .handle(.tap, on: .keyboardType(.alphabetic(.lowercased)))
     }
 }
 
 private extension BGKeyboardView {
+    
+    var autocompleteBar: some View {
+        AutocompleteToolbar(
+            suggestions: autocompleteContext.suggestions,
+            buttonBuilder: autocompleteBarButtonBuilder)
+            .frame(height: 50)
+    }
+    
+    func autocompleteBarButton(for suggestion: AutocompleteSuggestion) -> AnyView {
+        guard let subtitle = suggestion.subtitle else { return AutocompleteToolbar.standardButton(for: suggestion) }
+        return AnyView(VStack(spacing: 0) {
+            Text(suggestion.title).font(.callout)
+            Text(subtitle).font(.footnote)
+        }.frame(maxWidth: .infinity))
+    }
+    
+    func autocompleteBarButtonBuilder(suggestion: AutocompleteSuggestion) -> AnyView {
+        AnyView(autocompleteBarButton(for: suggestion)
+                    .background(Color.clearInteractable))
+    }
     
     func autocompleteButtonBuilder(suggestion: AutocompleteSuggestion) -> AnyView {
         guard let subtitle = suggestion.subtitle else { return AutocompleteToolbar.standardButton(for: suggestion) }
@@ -76,23 +110,23 @@ private extension BGKeyboardView {
         }.frame(maxWidth: .infinity))
     }
     
-    func buttonBuilder(action: KeyboardAction, size: CGSize) -> AnyView {
+    func buttonBuilder(action: KeyboardAction) -> AnyView {
         switch action {
         case .space: return AnyView(SystemKeyboardSpaceButtonContent(localeText: "Gàidhlig", spaceText: "falamh"))
-        case .newLine: return AnyView(BGSystemKeyboardReturnButtonContent())
-        default: return SystemKeyboard.standardButtonBuilder(action: action, keyboardSize: size)
+        case .newLine: return AnyView(BGSystemKeyboardReturnButtonContent(appearance: appearance))
+        default: return SystemKeyboard.standardButtonBuilder(action: action)
         }
     }
     
     func autocompleteReplacementAction(for suggestion: AutocompleteSuggestion, context: KeyboardContext) {
         let proxy = context.textDocumentProxy
-        let replacement = AutocompleteToolbar.standardReplacement(for: suggestion, context: context)
+        let replacement = AutocompleteToolbar.standardReplacement(for: suggestion)
         if proxy.currentWord != nil {
             proxy.replaceCurrentWord(with: replacement)
         } else {
             proxy.insertText(replacement)
         }
-        context.actionHandler.handle(.tap, on: .character(""))
+        actionHandler.handle(.tap, on: .character(""))
     }
 }
 
@@ -100,7 +134,9 @@ private extension BGKeyboardView {
 
 struct KeyboardView_Previews: PreviewProvider {
     static var previews: some View {
-        BGKeyboardView()
+        BGKeyboardView(actionHandler: MockKeyboardActionHandler(),
+                       appearance: StandardKeyboardAppearance(context: MockKeyboardContext()),
+                       layoutProvider: StandardKeyboardLayoutProvider(inputSetProvider: StandardKeyboardInputSetProvider(context: MockKeyboardContext())))
     }
 }
 

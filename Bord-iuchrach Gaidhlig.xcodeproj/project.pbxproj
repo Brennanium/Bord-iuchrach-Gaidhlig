@@ -7,27 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F31CA27B25B8197C00486FFA /* BGKeyboardDimensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31CA27A25B8197C00486FFA /* BGKeyboardDimensions.swift */; };
+		F355EE3E25DBAED000DECD1C /* MockingKit in Frameworks */ = {isa = PBXBuildFile; productRef = F355EE3D25DBAED000DECD1C /* MockingKit */; };
+		F355EE4A25DBAF8A00DECD1C /* MockKeyboardInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4225DBAF8900DECD1C /* MockKeyboardInputViewController.swift */; };
+		F355EE4B25DBAF8A00DECD1C /* MockKeyboardContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4325DBAF8900DECD1C /* MockKeyboardContext.swift */; };
+		F355EE4C25DBAF8A00DECD1C /* MockInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4425DBAF8900DECD1C /* MockInputViewController.swift */; };
+		F355EE4D25DBAF8A00DECD1C /* MockCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4525DBAF8A00DECD1C /* MockCollectionViewLayout.swift */; };
+		F355EE4E25DBAF8A00DECD1C /* MockFrequentEmojiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4625DBAF8A00DECD1C /* MockFrequentEmojiProvider.swift */; };
+		F355EE4F25DBAF8A00DECD1C /* MockDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4725DBAF8A00DECD1C /* MockDevice.swift */; };
+		F355EE5025DBAF8A00DECD1C /* MockKeyboardInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4825DBAF8A00DECD1C /* MockKeyboardInputSetProvider.swift */; };
+		F355EE5125DBAF8A00DECD1C /* MockKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F355EE4925DBAF8A00DECD1C /* MockKeyboardActionHandler.swift */; };
+		F355EE5D25DBC56800DECD1C /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F355EE5C25DBC56800DECD1C /* KeyboardKit */; };
 		F357BA4225AD6B040019D597 /* BGApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA4125AD6B040019D597 /* BGApp.swift */; };
 		F357BA4425AD6B040019D597 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA4325AD6B040019D597 /* ContentView.swift */; };
 		F357BA4625AD6B0B0019D597 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F357BA4525AD6B0B0019D597 /* Assets.xcassets */; };
 		F357BA4925AD6B0B0019D597 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F357BA4825AD6B0B0019D597 /* Preview Assets.xcassets */; };
 		F357BA5825AD6D530019D597 /* BGKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F357BA5725AD6D530019D597 /* BGKeyboardViewController.swift */; };
 		F357BA5C25AD6D530019D597 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F357BA5525AD6D520019D597 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		F357BA6525AD6E0E0019D597 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F357BA6425AD6E0E0019D597 /* KeyboardKit */; };
-		F357BA7025AD6EA70019D597 /* KeyboardKitSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F357BA6F25AD6EA70019D597 /* KeyboardKitSwiftUI */; };
 		F357BAAC25AD77620019D597 /* KeyboardKit in Frameworks */ = {isa = PBXBuildFile; productRef = F357BAAB25AD77620019D597 /* KeyboardKit */; };
 		F36CDC0E25B01285003D0D22 /* BGAutocompleteToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */; };
-		F383245825AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */; };
-		F383245925AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */; };
-		F383245D25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */; };
-		F383245E25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */; };
+		F36D33F325B588FF00C5BE64 /* BGSystemKeyboardReturnButtonContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36D33F225B588FF00C5BE64 /* BGSystemKeyboardReturnButtonContent.swift */; };
+		F383245925AE83180004A46B /* BGKeyboardInputSetProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245725AE83180004A46B /* BGKeyboardInputSetProvider.swift */; };
+		F383245E25AEA4900004A46B /* BGSecondaryCalloutActionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F383245C25AEA48F0004A46B /* BGSecondaryCalloutActionProvider.swift */; };
 		F3ED260625B29CBF009F4654 /* BGKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */; };
-		F3ED260A25B29D12009F4654 /* BGKeyboardView+Keyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED260925B29D12009F4654 /* BGKeyboardView+Keyboards.swift */; };
-		F3ED261425B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261325B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift */; };
-		F3ED261A25B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261925B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift */; };
-		F3ED262025B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261F25B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift */; };
-		F3ED262625B29FF0009F4654 /* DemoKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED262525B29FF0009F4654 /* DemoKeyboardActionHandler.swift */; };
-		F3FAFCF325AD9DC100380F77 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FAFCF225AD9DC100380F77 /* Keyboard.swift */; };
+		F3ED261425B29E4E009F4654 /* BGKeyboardActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261325B29E4E009F4654 /* BGKeyboardActionHandler.swift */; };
+		F3ED261A25B29F18009F4654 /* BGAutocompleteSuggestionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261925B29F18009F4654 /* BGAutocompleteSuggestionProvider.swift */; };
+		F3ED262025B29F70009F4654 /* BGKeyboardAppearanceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3ED261F25B29F70009F4654 /* BGKeyboardAppearanceProvider.swift */; };
+		F3FAFCF325AD9DC100380F77 /* KeyboardContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FAFCF225AD9DC100380F77 /* KeyboardContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F31CA27A25B8197C00486FFA /* BGKeyboardDimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGKeyboardDimensions.swift; sourceTree = "<group>"; };
+		F355EE4225DBAF8900DECD1C /* MockKeyboardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKeyboardInputViewController.swift; sourceTree = "<group>"; };
+		F355EE4325DBAF8900DECD1C /* MockKeyboardContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKeyboardContext.swift; sourceTree = "<group>"; };
+		F355EE4425DBAF8900DECD1C /* MockInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInputViewController.swift; sourceTree = "<group>"; };
+		F355EE4525DBAF8A00DECD1C /* MockCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockCollectionViewLayout.swift; sourceTree = "<group>"; };
+		F355EE4625DBAF8A00DECD1C /* MockFrequentEmojiProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockFrequentEmojiProvider.swift; sourceTree = "<group>"; };
+		F355EE4725DBAF8A00DECD1C /* MockDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockDevice.swift; sourceTree = "<group>"; };
+		F355EE4825DBAF8A00DECD1C /* MockKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F355EE4925DBAF8A00DECD1C /* MockKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKeyboardActionHandler.swift; sourceTree = "<group>"; };
 		F357BA3E25AD6B040019D597 /* Bord-iuchrach Gaidhlig.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bord-iuchrach Gaidhlig.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F357BA4125AD6B040019D597 /* BGApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGApp.swift; sourceTree = "<group>"; };
 		F357BA4325AD6B040019D597 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,15 +80,15 @@
 		F357BA5725AD6D530019D597 /* BGKeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGKeyboardViewController.swift; sourceTree = "<group>"; };
 		F357BA5925AD6D530019D597 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGAutocompleteToolbar.swift; sourceTree = "<group>"; };
-		F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
-		F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F36D33F225B588FF00C5BE64 /* BGSystemKeyboardReturnButtonContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGSystemKeyboardReturnButtonContent.swift; sourceTree = "<group>"; };
+		F372C06E25B92263009AACEE /* Keyboard Picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Keyboard Picture.png"; sourceTree = "<group>"; };
+		F383245725AE83180004A46B /* BGKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F383245C25AEA48F0004A46B /* BGSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
 		F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGKeyboardView.swift; sourceTree = "<group>"; };
-		F3ED260925B29D12009F4654 /* BGKeyboardView+Keyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BGKeyboardView+Keyboards.swift"; sourceTree = "<group>"; };
-		F3ED261325B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandlerBase.swift; sourceTree = "<group>"; };
-		F3ED261925B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
-		F3ED261F25B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardAppearanceProvider.swift; sourceTree = "<group>"; };
-		F3ED262525B29FF0009F4654 /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
-		F3FAFCF225AD9DC100380F77 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
+		F3ED261325B29E4E009F4654 /* BGKeyboardActionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F3ED261925B29F18009F4654 /* BGAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
+		F3ED261F25B29F70009F4654 /* BGKeyboardAppearanceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BGKeyboardAppearanceProvider.swift; sourceTree = "<group>"; };
+		F3FAFCF225AD9DC100380F77 /* KeyboardContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,22 +104,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F357BA7025AD6EA70019D597 /* KeyboardKitSwiftUI in Frameworks */,
-				F357BA6525AD6E0E0019D597 /* KeyboardKit in Frameworks */,
+				F355EE5D25DBC56800DECD1C /* KeyboardKit in Frameworks */,
+				F355EE3E25DBAED000DECD1C /* MockingKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F355EE3925DBA92200DECD1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F355EE4125DBAF3D00DECD1C /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F355EE4525DBAF8A00DECD1C /* MockCollectionViewLayout.swift */,
+				F355EE4725DBAF8A00DECD1C /* MockDevice.swift */,
+				F355EE4625DBAF8A00DECD1C /* MockFrequentEmojiProvider.swift */,
+				F355EE4425DBAF8900DECD1C /* MockInputViewController.swift */,
+				F355EE4925DBAF8A00DECD1C /* MockKeyboardActionHandler.swift */,
+				F355EE4325DBAF8900DECD1C /* MockKeyboardContext.swift */,
+				F355EE4825DBAF8A00DECD1C /* MockKeyboardInputSetProvider.swift */,
+				F355EE4225DBAF8900DECD1C /* MockKeyboardInputViewController.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		F357BA3525AD6B030019D597 = {
 			isa = PBXGroup;
 			children = (
-				F357BA7325AD71660019D597 /* Shared */,
+				F372C06D25B921FC009AACEE /* Resources */,
 				F357BA4025AD6B040019D597 /* Bord-iuchrach Gaidhlig */,
 				F357BA5625AD6D530019D597 /* Keyboard */,
 				F357BA3F25AD6B040019D597 /* Products */,
-				F357BAAA25AD77620019D597 /* Frameworks */,
+				F355EE3925DBA92200DECD1C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,34 +177,45 @@
 		F357BA5625AD6D530019D597 /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				F3ED262525B29FF0009F4654 /* DemoKeyboardActionHandler.swift */,
+				F372C06525B904CC009AACEE /* Views */,
+				F372C06225B904AD009AACEE /* Providers */,
 				F357BA5725AD6D530019D597 /* BGKeyboardViewController.swift */,
-				F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */,
-				F3ED260925B29D12009F4654 /* BGKeyboardView+Keyboards.swift */,
-				F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */,
-				F3FAFCF225AD9DC100380F77 /* Keyboard.swift */,
+				F3ED261325B29E4E009F4654 /* BGKeyboardActionHandler.swift */,
+				F31CA27A25B8197C00486FFA /* BGKeyboardDimensions.swift */,
+				F355EE4125DBAF3D00DECD1C /* Mocks */,
 				F357BA5925AD6D530019D597 /* Info.plist */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
 		};
-		F357BA7325AD71660019D597 /* Shared */ = {
+		F372C06225B904AD009AACEE /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				F3ED261925B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift */,
-				F3ED261325B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift */,
-				F3ED261F25B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift */,
-				F383245725AE83180004A46B /* DemoKeyboardInputSetProvider.swift */,
-				F383245C25AEA48F0004A46B /* DemoSecondaryCalloutActionProvider.swift */,
+				F383245C25AEA48F0004A46B /* BGSecondaryCalloutActionProvider.swift */,
+				F383245725AE83180004A46B /* BGKeyboardInputSetProvider.swift */,
+				F3ED261F25B29F70009F4654 /* BGKeyboardAppearanceProvider.swift */,
+				F3ED261925B29F18009F4654 /* BGAutocompleteSuggestionProvider.swift */,
 			);
-			path = Shared;
+			path = Providers;
 			sourceTree = "<group>";
 		};
-		F357BAAA25AD77620019D597 /* Frameworks */ = {
+		F372C06525B904CC009AACEE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F3ED260525B29CBF009F4654 /* BGKeyboardView.swift */,
+				F36D33F225B588FF00C5BE64 /* BGSystemKeyboardReturnButtonContent.swift */,
+				F36CDC0D25B01284003D0D22 /* BGAutocompleteToolbar.swift */,
+				F3FAFCF225AD9DC100380F77 /* KeyboardContent.swift */,
 			);
-			name = Frameworks;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F372C06D25B921FC009AACEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F372C06E25B92263009AACEE /* Keyboard Picture.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,8 +257,8 @@
 			);
 			name = Keyboard;
 			packageProductDependencies = (
-				F357BA6425AD6E0E0019D597 /* KeyboardKit */,
-				F357BA6F25AD6EA70019D597 /* KeyboardKitSwiftUI */,
+				F355EE3D25DBAED000DECD1C /* MockingKit */,
+				F355EE5C25DBC56800DECD1C /* KeyboardKit */,
 			);
 			productName = Keyboard;
 			productReference = F357BA5525AD6D520019D597 /* Keyboard.appex */;
@@ -244,7 +292,7 @@
 			mainGroup = F357BA3525AD6B030019D597;
 			packageReferences = (
 				F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */,
-				F357BA6E25AD6EA70019D597 /* XCRemoteSwiftPackageReference "KeyboardKitSwiftUI" */,
+				F355EE3C25DBAED000DECD1C /* XCRemoteSwiftPackageReference "MockingKit" */,
 			);
 			productRefGroup = F357BA3F25AD6B040019D597 /* Products */;
 			projectDirPath = "";
@@ -280,9 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F383245825AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */,
 				F357BA4425AD6B040019D597 /* ContentView.swift in Sources */,
-				F383245D25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */,
 				F357BA4225AD6B040019D597 /* BGApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,17 +337,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3ED260A25B29D12009F4654 /* BGKeyboardView+Keyboards.swift in Sources */,
-				F3ED261A25B29F18009F4654 /* DemoAutocompleteSuggestionProvider.swift in Sources */,
-				F383245E25AEA4900004A46B /* DemoSecondaryCalloutActionProvider.swift in Sources */,
-				F383245925AE83180004A46B /* DemoKeyboardInputSetProvider.swift in Sources */,
+				F36D33F325B588FF00C5BE64 /* BGSystemKeyboardReturnButtonContent.swift in Sources */,
+				F3ED261A25B29F18009F4654 /* BGAutocompleteSuggestionProvider.swift in Sources */,
+				F355EE4B25DBAF8A00DECD1C /* MockKeyboardContext.swift in Sources */,
+				F383245E25AEA4900004A46B /* BGSecondaryCalloutActionProvider.swift in Sources */,
+				F383245925AE83180004A46B /* BGKeyboardInputSetProvider.swift in Sources */,
 				F357BA5825AD6D530019D597 /* BGKeyboardViewController.swift in Sources */,
-				F3FAFCF325AD9DC100380F77 /* Keyboard.swift in Sources */,
-				F3ED261425B29E4E009F4654 /* DemoKeyboardActionHandlerBase.swift in Sources */,
+				F355EE4F25DBAF8A00DECD1C /* MockDevice.swift in Sources */,
+				F3FAFCF325AD9DC100380F77 /* KeyboardContent.swift in Sources */,
+				F355EE4D25DBAF8A00DECD1C /* MockCollectionViewLayout.swift in Sources */,
+				F355EE4C25DBAF8A00DECD1C /* MockInputViewController.swift in Sources */,
+				F355EE4A25DBAF8A00DECD1C /* MockKeyboardInputViewController.swift in Sources */,
+				F3ED261425B29E4E009F4654 /* BGKeyboardActionHandler.swift in Sources */,
+				F31CA27B25B8197C00486FFA /* BGKeyboardDimensions.swift in Sources */,
 				F3ED260625B29CBF009F4654 /* BGKeyboardView.swift in Sources */,
+				F355EE4E25DBAF8A00DECD1C /* MockFrequentEmojiProvider.swift in Sources */,
+				F355EE5025DBAF8A00DECD1C /* MockKeyboardInputSetProvider.swift in Sources */,
 				F36CDC0E25B01285003D0D22 /* BGAutocompleteToolbar.swift in Sources */,
-				F3ED262625B29FF0009F4654 /* DemoKeyboardActionHandler.swift in Sources */,
-				F3ED262025B29F70009F4654 /* DemoKeyboardAppearanceProvider.swift in Sources */,
+				F355EE5125DBAF8A00DECD1C /* MockKeyboardActionHandler.swift in Sources */,
+				F3ED262025B29F70009F4654 /* BGKeyboardAppearanceProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +421,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +476,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,7 +497,7 @@
 				DEVELOPMENT_TEAM = XH437MA6D9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bord-iuchrach Gaidhlig/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -466,7 +520,7 @@
 				DEVELOPMENT_TEAM = XH437MA6D9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Bord-iuchrach Gaidhlig/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +538,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XH437MA6D9;
 				INFOPLIST_FILE = Keyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +558,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XH437MA6D9;
 				INFOPLIST_FILE = Keyboard/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,34 +605,34 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
+		F355EE3C25DBAED000DECD1C /* XCRemoteSwiftPackageReference "MockingKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
+			repositoryURL = "https://github.com/danielsaidi/MockingKit.git";
 			requirement = {
 				branch = master;
 				kind = branch;
 			};
 		};
-		F357BA6E25AD6EA70019D597 /* XCRemoteSwiftPackageReference "KeyboardKitSwiftUI" */ = {
+		F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielsaidi/KeyboardKitSwiftUI.git";
+			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
 			requirement = {
-				branch = master;
+				branch = v4.0;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F357BA6425AD6E0E0019D597 /* KeyboardKit */ = {
+		F355EE3D25DBAED000DECD1C /* MockingKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F355EE3C25DBAED000DECD1C /* XCRemoteSwiftPackageReference "MockingKit" */;
+			productName = MockingKit;
+		};
+		F355EE5C25DBC56800DECD1C /* KeyboardKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F357BA6325AD6E0E0019D597 /* XCRemoteSwiftPackageReference "KeyboardKit" */;
 			productName = KeyboardKit;
-		};
-		F357BA6F25AD6EA70019D597 /* KeyboardKitSwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F357BA6E25AD6EA70019D597 /* XCRemoteSwiftPackageReference "KeyboardKitSwiftUI" */;
-			productName = KeyboardKitSwiftUI;
 		};
 		F357BAAB25AD77620019D597 /* KeyboardKit */ = {
 			isa = XCSwiftPackageProductDependency;

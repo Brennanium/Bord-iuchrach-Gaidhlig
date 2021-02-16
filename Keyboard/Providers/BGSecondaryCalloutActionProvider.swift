@@ -15,7 +15,7 @@ open class BGSecondaryCalloutActionProvider: SecondaryCalloutActionProvider {
     
     public init() {}
     
-    public func secondaryCalloutActions(for action: KeyboardAction, in context: KeyboardContext) -> [KeyboardAction] {
+    public func secondaryCalloutActions(for action: KeyboardAction) -> [KeyboardAction] {
         action.secondaryCalloutActions()
     }
 }

@@ -22,8 +22,8 @@ class BGAutocompleteSuggestionProvider: AutocompleteSuggestionProvider {
         controller?.textDocumentProxy
     }
     
-    private var context: KeyboardContext? {
-        controller?.context
+    private var context: KeyboardContext {
+        KeyboardInputViewController.shared.keyboardContext
     }
     
     func autocompleteSuggestions(for text: String, completion: AutocompleteResponse) {
@@ -96,7 +96,7 @@ private extension BGAutocompleteSuggestionProvider {
     }
     
     func captialization(_ word: String) -> String {
-        guard let keyboardType = context?.keyboardType else { return word }
+        let keyboardType = context.keyboardType
         
         switch keyboardType {
         case .alphabetic(let state):
