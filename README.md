@@ -32,5 +32,9 @@ This app is written entirely in Swift and almost entirely uses SwiftUI, though i
 - Autocomplete Suggestions: the autocomplete suggestions are currently very basic; adding a full autocorrect and autocomplete system is a must for a future version
 - Making input set and autocomplete/correct easily swappable/trainable for new languages, with minimal change to the code; for non-programmers.  Ideally for other minority, endangered, or indigenous languages.
 
+## Addional work
+- [Gàidhlig Autofill][Autofill]: A Python project of mine that provides basic autofill suggestions for Scottish Gaelic
 
 [KeyboardKit]: https://github.com/danielsaidi/KeyboardKit
+[Autofill]: https://github.com/Brennanium/GaidhligAutofill
+
