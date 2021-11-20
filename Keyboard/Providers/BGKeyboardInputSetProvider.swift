@@ -18,16 +18,17 @@ public class BGKeyboardInputSetProvider: DeviceSpecificInputSetProvider, Localiz
     public let localeKey: String = "gd"
     
     public func alphabeticInputSet() -> AlphabeticKeyboardInputSet {
-        AlphabeticKeyboardInputSet(rows: [
-            "qwertyuiop".chars,
-            ["a", "s", "d", "f", "g", "h", "j", "k", "l", Self.specialCharacter(proxy: KeyboardInputViewController.shared.textDocumentProxy)],
+        let specialChar = Self.specialCharacter(proxy: KeyboardInputViewController.shared.textDocumentProxy)
+        return AlphabeticKeyboardInputSet(rows: [
+            row("qwertyuiop"),
+            ["a", "s", "d", "f", "g", "h", "j", "k", "l", specialChar].map(KeyboardInput.init),//, specialChar].map(KeyboardInput.init),
             row(phone: "zxcvbnm", pad: "zxcvbnm,.")
         ]) 
     }
     
     public func numericInputSet() -> NumericKeyboardInputSet {
         NumericKeyboardInputSet(rows: [
-            "1234567890".chars,
+            row("1234567890"),
             row(phone: "-/:;()£&@“", pad: "@#£&*()’”"),
             row(phone: ".,?!’", pad: "%-+=/;:,.")
         ])
@@ -55,10 +56,4 @@ public class BGKeyboardInputSetProvider: DeviceSpecificInputSetProvider, Localiz
         }
         return "’";
     }
-}
-
-
-extension String {
-    
-    var chars: [String] { self.map { String($0) } }
 }

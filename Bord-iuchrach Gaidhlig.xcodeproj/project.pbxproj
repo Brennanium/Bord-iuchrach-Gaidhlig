@@ -37,6 +37,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F32C324825DCA4C40051054B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32C305225DCA4C00051054B /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A921152225D58A94003510D9;
+			remoteInfo = Demo;
+		};
+		F32C324A25DCA4C40051054B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32C305225DCA4C00051054B /* Demo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A921153925D58AC7003510D9;
+			remoteInfo = Keyboard;
+		};
+		F32C324E25DCA4C40051054B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32C309625DCA4C10051054B /* KeyboardKitDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84670445234A709400355331;
+			remoteInfo = KeyboardKitDemo;
+		};
+		F32C325025DCA4C40051054B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F32C309625DCA4C10051054B /* KeyboardKitDemo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8467045D234A711100355331;
+			remoteInfo = KeyboardKitDemoKeyboard;
+		};
 		F357BA5A25AD6D530019D597 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F357BA3625AD6B030019D597 /* Project object */;
@@ -62,6 +90,405 @@
 
 /* Begin PBXFileReference section */
 		F31CA27A25B8197C00486FFA /* BGKeyboardDimensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGKeyboardDimensions.swift; sourceTree = "<group>"; };
+		F32C2E4925DCA4840051054B /* KeyboardKit */ = {isa = PBXFileReference; lastKnownFileType = folder; name = KeyboardKit; path = ../Forks/KeyboardKit; sourceTree = "<group>"; };
+		F32C305225DCA4C00051054B /* Demo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Demo.xcodeproj; sourceTree = "<group>"; };
+		F32C305725DCA4C00051054B /* DemoAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppearance.swift; sourceTree = "<group>"; };
+		F32C305825DCA4C00051054B /* DemoListButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListButton.swift; sourceTree = "<group>"; };
+		F32C305925DCA4C00051054B /* DemoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListItem.swift; sourceTree = "<group>"; };
+		F32C305A25DCA4C00051054B /* DemoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoList.swift; sourceTree = "<group>"; };
+		F32C305B25DCA4C00051054B /* DemoListText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListText.swift; sourceTree = "<group>"; };
+		F32C305D25DCA4C00051054B /* Image+Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Demo.swift"; sourceTree = "<group>"; };
+		F32C305E25DCA4C00051054B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F32C305F25DCA4C00051054B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F32C306225DCA4C00051054B /* SourceSansPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.ttf"; sourceTree = "<group>"; };
+		F32C306325DCA4C00051054B /* SourceSansPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Bold.ttf"; sourceTree = "<group>"; };
+		F32C306525DCA4C00051054B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F32C306625DCA4C00051054B /* EditScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScreen.swift; sourceTree = "<group>"; };
+		F32C306725DCA4C00051054B /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
+		F32C306925DCA4C00051054B /* MultilineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultilineTextField.swift; sourceTree = "<group>"; };
+		F32C306A25DCA4C00051054B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F32C306B25DCA4C00051054B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32C306C25DCA4C00051054B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F32C306D25DCA4C00051054B /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		F32C306F25DCA4C00051054B /* DemoAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
+		F32C307025DCA4C00051054B /* ImageKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKeyboard.swift; sourceTree = "<group>"; };
+		F32C307125DCA4C00051054B /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		F32C307225DCA4C00051054B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F32C307325DCA4C00051054B /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F32C307625DCA4C00051054B /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		F32C307725DCA4C00051054B /* rss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rss.png; sourceTree = "<group>"; };
+		F32C307825DCA4C00051054B /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		F32C307925DCA4C00051054B /* delicious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delicious.png; sourceTree = "<group>"; };
+		F32C307A25DCA4C00051054B /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		F32C307B25DCA4C00051054B /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		F32C307C25DCA4C00051054B /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		F32C307D25DCA4C00051054B /* zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom.png; sourceTree = "<group>"; };
+		F32C307E25DCA4C00051054B /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		F32C307F25DCA4C00051054B /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label.png; sourceTree = "<group>"; };
+		F32C308025DCA4C00051054B /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		F32C308125DCA4C00051054B /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac.png; sourceTree = "<group>"; };
+		F32C308225DCA4C00051054B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		F32C308325DCA4C00051054B /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		F32C308425DCA4C00051054B /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		F32C308525DCA4C00051054B /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		F32C308625DCA4C00051054B /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		F32C308725DCA4C00051054B /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
+		F32C308825DCA4C00051054B /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		F32C308925DCA4C00051054B /* idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idea.png; sourceTree = "<group>"; };
+		F32C308A25DCA4C00051054B /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		F32C308B25DCA4C00051054B /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		F32C308C25DCA4C00051054B /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		F32C308D25DCA4C00051054B /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		F32C308E25DCA4C00051054B /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		F32C308F25DCA4C10051054B /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		F32C309025DCA4C10051054B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32C309125DCA4C10051054B /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F32C309225DCA4C10051054B /* KeyboardKit.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = KeyboardKit.podspec; sourceTree = "<group>"; };
+		F32C309325DCA4C10051054B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F32C309625DCA4C10051054B /* KeyboardKitDemo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = KeyboardKitDemo.xcodeproj; sourceTree = "<group>"; };
+		F32C309A25DCA4C10051054B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F32C309C25DCA4C10051054B /* DemoImageKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoImageKeyboard.swift; sourceTree = "<group>"; };
+		F32C309D25DCA4C10051054B /* DemoAutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
+		F32C309E25DCA4C10051054B /* UIImage+Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Pasteboard.swift"; sourceTree = "<group>"; };
+		F32C309F25DCA4C10051054B /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F32C30A025DCA4C10051054B /* UIImage+Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Photos.swift"; sourceTree = "<group>"; };
+		F32C30A225DCA4C10051054B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F32C30A425DCA4C10051054B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F32C30A525DCA4C10051054B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F32C30A725DCA4C10051054B /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		F32C30A825DCA4C10051054B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F32C30A925DCA4C10051054B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F32C30AB25DCA4C10051054B /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
+		F32C30AC25DCA4C10051054B /* rss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rss.png; sourceTree = "<group>"; };
+		F32C30AD25DCA4C10051054B /* warning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = warning.png; sourceTree = "<group>"; };
+		F32C30AE25DCA4C10051054B /* delicious.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delicious.png; sourceTree = "<group>"; };
+		F32C30AF25DCA4C10051054B /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		F32C30B025DCA4C10051054B /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		F32C30B125DCA4C10051054B /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mail.png; sourceTree = "<group>"; };
+		F32C30B225DCA4C10051054B /* zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom.png; sourceTree = "<group>"; };
+		F32C30B325DCA4C10051054B /* bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble.png; sourceTree = "<group>"; };
+		F32C30B425DCA4C10051054B /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label.png; sourceTree = "<group>"; };
+		F32C30B525DCA4C10051054B /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		F32C30B625DCA4C10051054B /* mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mac.png; sourceTree = "<group>"; };
+		F32C30B725DCA4C10051054B /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		F32C30B825DCA4C10051054B /* monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monitor.png; sourceTree = "<group>"; };
+		F32C30B925DCA4C10051054B /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
+		F32C30BA25DCA4C10051054B /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		F32C30BB25DCA4C10051054B /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
+		F32C30BC25DCA4C10051054B /* base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = base.png; sourceTree = "<group>"; };
+		F32C30BD25DCA4C10051054B /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
+		F32C30BE25DCA4C10051054B /* idea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = idea.png; sourceTree = "<group>"; };
+		F32C30BF25DCA4C10051054B /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		F32C30C025DCA4C10051054B /* trash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trash.png; sourceTree = "<group>"; };
+		F32C30C125DCA4C10051054B /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		F32C30C225DCA4C10051054B /* favorite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite.png; sourceTree = "<group>"; };
+		F32C30C325DCA4C10051054B /* refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = refresh.png; sourceTree = "<group>"; };
+		F32C30C425DCA4C10051054B /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
+		F32C30C525DCA4C10051054B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32C30C625DCA4C10051054B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F32C30C925DCA4C10051054B /* DemoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoButton.swift; sourceTree = "<group>"; };
+		F32C30CA25DCA4C10051054B /* DemoButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoButton.xib; sourceTree = "<group>"; };
+		F32C30CB25DCA4C10051054B /* DemoKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F32C30CD25DCA4C10051054B /* HorizontalFloatingHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalFloatingHeaderLayout.swift; sourceTree = "<group>"; };
+		F32C30CE25DCA4C10051054B /* EnhancedEmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnhancedEmojiKeyboard.swift; sourceTree = "<group>"; };
+		F32C30CF25DCA4C10051054B /* ImageKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageKeyboard.swift; sourceTree = "<group>"; };
+		F32C30D025DCA4C10051054B /* DemoKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoKeyboard.swift; sourceTree = "<group>"; };
+		F32C30D125DCA4C10051054B /* HFloatingHeaderButtonCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HFloatingHeaderButtonCollectionView.swift; sourceTree = "<group>"; };
+		F32C30D225DCA4C10051054B /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
+		F32C30D325DCA4C10051054B /* KeyboardViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		F32C30D425DCA4C10051054B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F32C30D525DCA4C10051054B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F32C30D725DCA4C10051054B /* EmojiCategory+L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EmojiCategory+L10n.swift"; sourceTree = "<group>"; };
+		F32C30D825DCA4C10051054B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F32C30D925DCA4C10051054B /* Tutorial.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Tutorial.md; sourceTree = "<group>"; };
+		F32C30DC25DCA4C10051054B /* Clients.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = Clients.sketch; sourceTree = "<group>"; };
+		F32C30DE25DCA4C10051054B /* anomaly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = anomaly.png; sourceTree = "<group>"; };
+		F32C30DF25DCA4C10051054B /* milo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = milo.png; sourceTree = "<group>"; };
+		F32C30E025DCA4C10051054B /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo.png; sourceTree = "<group>"; };
+		F32C30E125DCA4C10051054B /* Logo.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = Logo.sketch; sourceTree = "<group>"; };
+		F32C30E425DCA4C10051054B /* SpecialElite-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpecialElite-Regular.ttf"; sourceTree = "<group>"; };
+		F32C30E525DCA4C10051054B /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F32C30E725DCA4C10051054B /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		F32C30E825DCA4C10051054B /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		F32C30E925DCA4C10051054B /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		F32C30EA25DCA4C10051054B /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		F32C30EB25DCA4C10051054B /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		F32C30EC25DCA4C10051054B /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		F32C30ED25DCA4C10051054B /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		F32C30EE25DCA4C10051054B /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		F32C30EF25DCA4C10051054B /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F32C30F025DCA4C10051054B /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		F32C30F125DCA4C10051054B /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		F32C30F225DCA4C10051054B /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		F32C30F325DCA4C10051054B /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		F32C30F425DCA4C10051054B /* Icon.sketch */ = {isa = PBXFileReference; lastKnownFileType = file; path = Icon.sketch; sourceTree = "<group>"; };
+		F32C30F525DCA4C10051054B /* Demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Demo.gif; sourceTree = "<group>"; };
+		F32C30F725DCA4C10051054B /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		F32C30FA25DCA4C10051054B /* MockKeyboardInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeyboardInputViewController.swift; sourceTree = "<group>"; };
+		F32C30FB25DCA4C10051054B /* MockCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCollectionViewLayout.swift; sourceTree = "<group>"; };
+		F32C30FC25DCA4C10051054B /* MockFrequentEmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFrequentEmojiProvider.swift; sourceTree = "<group>"; };
+		F32C30FD25DCA4C10051054B /* MockKeyboardContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeyboardContext.swift; sourceTree = "<group>"; };
+		F32C30FE25DCA4C10051054B /* MockInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockInputViewController.swift; sourceTree = "<group>"; };
+		F32C30FF25DCA4C10051054B /* MockDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDevice.swift; sourceTree = "<group>"; };
+		F32C310025DCA4C10051054B /* MockKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C310125DCA4C10051054B /* MockKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F32C310325DCA4C10051054B /* HapticFeedbackConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackConfigurationTests.swift; sourceTree = "<group>"; };
+		F32C310525DCA4C10051054B /* LocaleDictionaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDictionaryTests.swift; sourceTree = "<group>"; };
+		F32C310725DCA4C10051054B /* AutocompleteToolbarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteToolbarTests.swift; sourceTree = "<group>"; };
+		F32C310925DCA4C10051054B /* StandardKeyboardInputSetProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardInputSetProviderTests.swift; sourceTree = "<group>"; };
+		F32C310A25DCA4C10051054B /* EnglishKeyboardInputSetProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKeyboardInputSetProviderTests.swift; sourceTree = "<group>"; };
+		F32C310C25DCA4C10051054B /* KeyboardCasing+ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardCasing+ButtonTests.swift"; sourceTree = "<group>"; };
+		F32C310D25DCA4C10051054B /* KeyboardType+ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardType+ButtonTests.swift"; sourceTree = "<group>"; };
+		F32C310E25DCA4C10051054B /* Color+ClearInteractableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ClearInteractableTests.swift"; sourceTree = "<group>"; };
+		F32C310F25DCA4C10051054B /* Image+ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+ButtonTests.swift"; sourceTree = "<group>"; };
+		F32C311025DCA4C10051054B /* StandardKeyboardAppearanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardAppearanceTests.swift; sourceTree = "<group>"; };
+		F32C311125DCA4C10051054B /* KeyboardAction+ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+ButtonTests.swift"; sourceTree = "<group>"; };
+		F32C311425DCA4C10051054B /* UIKeyboardButtonViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonViewTests.swift; sourceTree = "<group>"; };
+		F32C311525DCA4C10051054B /* UIKeyboardButtonRowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonRowTests.swift; sourceTree = "<group>"; };
+		F32C311625DCA4C10051054B /* UIKeyboardButton+GesturesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKeyboardButton+GesturesTests.swift"; sourceTree = "<group>"; };
+		F32C311825DCA4C10051054B /* UIView+ShadowTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+ShadowTests.swift"; sourceTree = "<group>"; };
+		F32C311A25DCA4C10051054B /* UIViewAutoresizing+ExtrasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewAutoresizing+ExtrasTests.swift"; sourceTree = "<group>"; };
+		F32C311B25DCA4C10051054B /* UIView+NibTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+NibTests.swift"; sourceTree = "<group>"; };
+		F32C311C25DCA4C10051054B /* UIScrollView+PageIndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+PageIndexTests.swift"; sourceTree = "<group>"; };
+		F32C311D25DCA4C10051054B /* UIStackView+SubviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+SubviewsTests.swift"; sourceTree = "<group>"; };
+		F32C311F25DCA4C10051054B /* UIKeyboardToastAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardToastAlertTests.swift; sourceTree = "<group>"; };
+		F32C312125DCA4C10051054B /* PagedKeyboardComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedKeyboardComponentTests.swift; sourceTree = "<group>"; };
+		F32C312225DCA4C10051054B /* HorizontalKeyboardComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalKeyboardComponentTests.swift; sourceTree = "<group>"; };
+		F32C312325DCA4C10051054B /* VerticalKeyboardComponentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalKeyboardComponentTests.swift; sourceTree = "<group>"; };
+		F32C312525DCA4C10051054B /* RepeatingGestureRecognizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingGestureRecognizerTests.swift; sourceTree = "<group>"; };
+		F32C312725DCA4C10051054B /* KeyboardToolbarViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardToolbarViewTests.swift; sourceTree = "<group>"; };
+		F32C312825DCA4C10051054B /* KeyboardSpacerViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardSpacerViewTests.swift; sourceTree = "<group>"; };
+		F32C312925DCA4C10051054B /* KeyboardCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCollectionViewTests.swift; sourceTree = "<group>"; };
+		F32C312A25DCA4C10051054B /* KeyboardButtonRowCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButtonRowCollectionViewTests.swift; sourceTree = "<group>"; };
+		F32C312B25DCA4C10051054B /* KeyboardButtonCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButtonCollectionViewTests.swift; sourceTree = "<group>"; };
+		F32C312D25DCA4C10051054B /* EdgeInsets+KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+KeyboardTests.swift"; sourceTree = "<group>"; };
+		F32C312E25DCA4C10051054B /* CGFloat+KeyboardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+KeyboardTests.swift"; sourceTree = "<group>"; };
+		F32C313025DCA4C10051054B /* BaseKeyboardLayoutProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKeyboardLayoutProviderTests.swift; sourceTree = "<group>"; };
+		F32C313125DCA4C10051054B /* KeyboardLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutTests.swift; sourceTree = "<group>"; };
+		F32C313325DCA4C10051054B /* UITextDocumentProxy+CurrentWordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+CurrentWordTests.swift"; sourceTree = "<group>"; };
+		F32C313425DCA4C10051054B /* UIView+SubviewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+SubviewsTests.swift"; sourceTree = "<group>"; };
+		F32C313525DCA4C10051054B /* String+CasingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+CasingTests.swift"; sourceTree = "<group>"; };
+		F32C313625DCA4C10051054B /* String+DelimitersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DelimitersTests.swift"; sourceTree = "<group>"; };
+		F32C313725DCA4C10051054B /* View+ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ButtonTests.swift"; sourceTree = "<group>"; };
+		F32C313825DCA4C10051054B /* Sequence+BatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+BatchTests.swift"; sourceTree = "<group>"; };
+		F32C313925DCA4C10051054B /* UITextDocumentProxy+DeleteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+DeleteTests.swift"; sourceTree = "<group>"; };
+		F32C313A25DCA4C10051054B /* UITextDocumentProxy+ContentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+ContentTests.swift"; sourceTree = "<group>"; };
+		F32C313B25DCA4C10051054B /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		F32C313D25DCA4C10051054B /* SystemKeyboardButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboardButtonTests.swift; sourceTree = "<group>"; };
+		F32C313F25DCA4C10051054B /* AudioFeedbackConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedbackConfigurationTests.swift; sourceTree = "<group>"; };
+		F32C314025DCA4C10051054B /* AudioFeedbackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedbackTests.swift; sourceTree = "<group>"; };
+		F32C314225DCA4C10051054B /* KeyboardAction+GridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+GridTests.swift"; sourceTree = "<group>"; };
+		F32C314325DCA4C10051054B /* KeyboardAction+AliasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+AliasesTests.swift"; sourceTree = "<group>"; };
+		F32C314425DCA4C10051054B /* KeyboardAction+Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+Test.swift"; sourceTree = "<group>"; };
+		F32C314525DCA4C10051054B /* StandardKeyboardActionHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardActionHandlerTests.swift; sourceTree = "<group>"; };
+		F32C314625DCA4C10051054B /* KeyboardAction+ActionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+ActionsTests.swift"; sourceTree = "<group>"; };
+		F32C314725DCA4C10051054B /* KeyboardActions+ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardActions+ImageTests.swift"; sourceTree = "<group>"; };
+		F32C314825DCA4C10051054B /* KeyboardActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardActionTests.swift; sourceTree = "<group>"; };
+		F32C314A25DCA4C10051054B /* MostRecentEmojiProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentEmojiProviderTests.swift; sourceTree = "<group>"; };
+		F32C314B25DCA4C10051054B /* EmojiKeyboardConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboardConfigurationTests.swift; sourceTree = "<group>"; };
+		F32C314C25DCA4C10051054B /* EmojiCategoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryTests.swift; sourceTree = "<group>"; };
+		F32C314E25DCA4C10051054B /* KeyboardInputViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputViewControllerTests.swift; sourceTree = "<group>"; };
+		F32C314F25DCA4C10051054B /* KeyboardHostingControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHostingControllerTests.swift; sourceTree = "<group>"; };
+		F32C315025DCA4C10051054B /* KeyboardCasingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCasingTests.swift; sourceTree = "<group>"; };
+		F32C315125DCA4C20051054B /* KeyboardContext+KeyboardTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardContext+KeyboardTypeTests.swift"; sourceTree = "<group>"; };
+		F32C315225DCA4C20051054B /* ObservableKeyboardContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableKeyboardContextTests.swift; sourceTree = "<group>"; };
+		F32C315325DCA4C20051054B /* StandardKeyboardBehaviorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardBehaviorTests.swift; sourceTree = "<group>"; };
+		F32C315425DCA4C20051054B /* KeyboardTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardTypeTests.swift; sourceTree = "<group>"; };
+		F32C315525DCA4C20051054B /* KeyboardInputViewController+ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardInputViewController+ViewTests.swift"; sourceTree = "<group>"; };
+		F32C315625DCA4C20051054B /* KeyboardContextTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardContextTests.swift; sourceTree = "<group>"; };
+		F32C315825DCA4C20051054B /* StandardSecondaryCalloutActionProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardSecondaryCalloutActionProviderTests.swift; sourceTree = "<group>"; };
+		F32C315925DCA4C20051054B /* EnglishSecondaryCalloutActionProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishSecondaryCalloutActionProviderTests.swift; sourceTree = "<group>"; };
+		F32C315A25DCA4C20051054B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F32C315B25DCA4C20051054B /* Package.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Package.resolved; sourceTree = "<group>"; };
+		F32C315C25DCA4C20051054B /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F32C315E25DCA4C20051054B /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		F32C315F25DCA4C20051054B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F32C316125DCA4C20051054B /* FUNDING.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		F32C316225DCA4C20051054B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		F32C316325DCA4C20051054B /* RELEASE_NOTES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = RELEASE_NOTES.md; sourceTree = "<group>"; };
+		F32C316725DCA4C20051054B /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		F32C316825DCA4C20051054B /* HapticFeedbackConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedbackConfiguration.swift; sourceTree = "<group>"; };
+		F32C316A25DCA4C20051054B /* LocaleDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDictionary.swift; sourceTree = "<group>"; };
+		F32C316B25DCA4C20051054B /* LocaleKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleKey.swift; sourceTree = "<group>"; };
+		F32C316C25DCA4C20051054B /* LocalizedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedService.swift; sourceTree = "<group>"; };
+		F32C316E25DCA4C20051054B /* AutocompleteSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteSuggestion.swift; sourceTree = "<group>"; };
+		F32C316F25DCA4C20051054B /* AutocompleteToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteToolbar.swift; sourceTree = "<group>"; };
+		F32C317025DCA4C20051054B /* ObservableAutocompleteContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAutocompleteContext.swift; sourceTree = "<group>"; };
+		F32C317125DCA4C20051054B /* StandardAutocompleteSuggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardAutocompleteSuggestion.swift; sourceTree = "<group>"; };
+		F32C317225DCA4C20051054B /* AutocompleteSuggestionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteSuggestionProvider.swift; sourceTree = "<group>"; };
+		F32C317325DCA4C20051054B /* AutocompleteContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutocompleteContext.swift; sourceTree = "<group>"; };
+		F32C317525DCA4C20051054B /* StaticKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C317625DCA4C20051054B /* EnglishKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C317725DCA4C20051054B /* LocalizedKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C317825DCA4C20051054B /* KeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C317925DCA4C20051054B /* KeyboardInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInput.swift; sourceTree = "<group>"; };
+		F32C317A25DCA4C20051054B /* DeviceSpecificInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSpecificInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C317B25DCA4C20051054B /* StandardKeyboardInputSetProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardInputSetProvider.swift; sourceTree = "<group>"; };
+		F32C317C25DCA4C20051054B /* KeyboardInputSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputSet.swift; sourceTree = "<group>"; };
+		F32C317E25DCA4C20051054B /* Image+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Button.swift"; sourceTree = "<group>"; };
+		F32C317F25DCA4C20051054B /* KeyboardAction+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+Button.swift"; sourceTree = "<group>"; };
+		F32C318025DCA4C20051054B /* KeyboardType+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardType+Button.swift"; sourceTree = "<group>"; };
+		F32C318125DCA4C20051054B /* StandardKeyboardAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardAppearance.swift; sourceTree = "<group>"; };
+		F32C318225DCA4C20051054B /* UIImage+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Button.swift"; sourceTree = "<group>"; };
+		F32C318325DCA4C20051054B /* Color+ClearInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+ClearInteractable.swift"; sourceTree = "<group>"; };
+		F32C318425DCA4C20051054B /* StandardKeyboardAppearanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardAppearanceProvider.swift; sourceTree = "<group>"; };
+		F32C318525DCA4C20051054B /* KeyboardAppearance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAppearance.swift; sourceTree = "<group>"; };
+		F32C318625DCA4C20051054B /* View+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Button.swift"; sourceTree = "<group>"; };
+		F32C318725DCA4C20051054B /* KeyboardCasing+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardCasing+Button.swift"; sourceTree = "<group>"; };
+		F32C318825DCA4C20051054B /* Color+Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Button.swift"; sourceTree = "<group>"; };
+		F32C318925DCA4C20051054B /* Color+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Resources.swift"; sourceTree = "<group>"; };
+		F32C318A25DCA4C20051054B /* KeyboardAppearanceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAppearanceProvider.swift; sourceTree = "<group>"; };
+		F32C318D25DCA4C20051054B /* UIKeyboardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonView.swift; sourceTree = "<group>"; };
+		F32C318E25DCA4C20051054B /* UIKeyboardButtonRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonRow.swift; sourceTree = "<group>"; };
+		F32C318F25DCA4C20051054B /* UIKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButton.swift; sourceTree = "<group>"; };
+		F32C319025DCA4C20051054B /* UIKeyboardButton+Gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKeyboardButton+Gestures.swift"; sourceTree = "<group>"; };
+		F32C319225DCA4C20051054B /* UIAutocompleteToolbarSeparator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAutocompleteToolbarSeparator.swift; sourceTree = "<group>"; };
+		F32C319325DCA4C20051054B /* UIAutocompleteToolbarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAutocompleteToolbarLabel.swift; sourceTree = "<group>"; };
+		F32C319425DCA4C20051054B /* UIAutocompleteToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAutocompleteToolbar.swift; sourceTree = "<group>"; };
+		F32C319625DCA4C20051054B /* UIShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIShadow.swift; sourceTree = "<group>"; };
+		F32C319725DCA4C20051054B /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		F32C319925DCA4C20051054B /* UIScrollView+PageIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+PageIndex.swift"; sourceTree = "<group>"; };
+		F32C319A25DCA4C20051054B /* UIStackView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Subviews.swift"; sourceTree = "<group>"; };
+		F32C319B25DCA4C20051054B /* UIColor+ClearInteractable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+ClearInteractable.swift"; sourceTree = "<group>"; };
+		F32C319C25DCA4C20051054B /* UIViewAutoresizing+Extras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewAutoresizing+Extras.swift"; sourceTree = "<group>"; };
+		F32C319D25DCA4C20051054B /* UIView+Visibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Visibility.swift"; sourceTree = "<group>"; };
+		F32C319E25DCA4C20051054B /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		F32C319F25DCA4C20051054B /* UIView+Nib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		F32C31A125DCA4C20051054B /* UIKeyboardAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardAlert.swift; sourceTree = "<group>"; };
+		F32C31A225DCA4C20051054B /* UIKeyboardToastAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardToastAlert.swift; sourceTree = "<group>"; };
+		F32C31A425DCA4C20051054B /* UIPagedKeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPagedKeyboardComponent.swift; sourceTree = "<group>"; };
+		F32C31A525DCA4C20051054B /* UIKeyboardButtonRowComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonRowComponent.swift; sourceTree = "<group>"; };
+		F32C31A625DCA4C20051054B /* UIHorizontalKeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHorizontalKeyboardComponent.swift; sourceTree = "<group>"; };
+		F32C31A725DCA4C20051054B /* UIKeyboardStackViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardStackViewComponent.swift; sourceTree = "<group>"; };
+		F32C31A825DCA4C20051054B /* UIKeyboardToolbarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardToolbarComponent.swift; sourceTree = "<group>"; };
+		F32C31A925DCA4C20051054B /* UIVerticalKeyboardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVerticalKeyboardComponent.swift; sourceTree = "<group>"; };
+		F32C31AB25DCA4C20051054B /* UIRepeatingGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRepeatingGestureRecognizer.swift; sourceTree = "<group>"; };
+		F32C31AD25DCA4C20051054B /* UIKeyboardButtonCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonCollectionView.swift; sourceTree = "<group>"; };
+		F32C31AE25DCA4C20051054B /* UIKeyboardSpacerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardSpacerView.swift; sourceTree = "<group>"; };
+		F32C31AF25DCA4C20051054B /* UIKeyboardToolbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardToolbarView.swift; sourceTree = "<group>"; };
+		F32C31B025DCA4C20051054B /* UIKeyboardCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardCollectionView.swift; sourceTree = "<group>"; };
+		F32C31B125DCA4C20051054B /* UIKeyboardButtonRowCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKeyboardButtonRowCollectionView.swift; sourceTree = "<group>"; };
+		F32C31B425DCA4C20051054B /* iPhoneKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPhoneKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		F32C31B525DCA4C20051054B /* iPadKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iPadKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		F32C31B625DCA4C20051054B /* StaticKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		F32C31B725DCA4C20051054B /* BaseKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		F32C31B825DCA4C20051054B /* CGFloat+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+Keyboard.swift"; sourceTree = "<group>"; };
+		F32C31B925DCA4C20051054B /* KeyboardLayoutItemSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutItemSize.swift; sourceTree = "<group>"; };
+		F32C31BA25DCA4C20051054B /* EdgeInsets+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Keyboard.swift"; sourceTree = "<group>"; };
+		F32C31BB25DCA4C20051054B /* KeyboardLayoutItemWidth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutItemWidth.swift; sourceTree = "<group>"; };
+		F32C31BC25DCA4C20051054B /* KeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		F32C31BD25DCA4C20051054B /* KeyboardLayoutItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutItemRow.swift; sourceTree = "<group>"; };
+		F32C31BE25DCA4C20051054B /* StandardKeyboardLayoutProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardLayoutProvider.swift; sourceTree = "<group>"; };
+		F32C31BF25DCA4C20051054B /* KeyboardLayoutItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutItem.swift; sourceTree = "<group>"; };
+		F32C31C025DCA4C20051054B /* KeyboardLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardLayout.swift; sourceTree = "<group>"; };
+		F32C31C225DCA4C20051054B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F32C31C425DCA4C20051054B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F32C31C525DCA4C20051054B /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F32C31C725DCA4C20051054B /* KeyboardToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardToast.swift; sourceTree = "<group>"; };
+		F32C31C825DCA4C20051054B /* KeyboardToastContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardToastContext.swift; sourceTree = "<group>"; };
+		F32C31C925DCA4C20051054B /* View+KeyboardToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+KeyboardToast.swift"; sourceTree = "<group>"; };
+		F32C31CB25DCA4C20051054B /* Bundle+Module.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Module.swift"; sourceTree = "<group>"; };
+		F32C31CD25DCA4C20051054B /* UIInterfaceOrientation+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInterfaceOrientation+Orientation.swift"; sourceTree = "<group>"; };
+		F32C31CE25DCA4C20051054B /* UITextDocumentProxy+Delete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+Delete.swift"; sourceTree = "<group>"; };
+		F32C31CF25DCA4C20051054B /* UIScreen+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Orientation.swift"; sourceTree = "<group>"; };
+		F32C31D025DCA4C20051054B /* String+Delimiters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Delimiters.swift"; sourceTree = "<group>"; };
+		F32C31D125DCA4C20051054B /* String+Casing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Casing.swift"; sourceTree = "<group>"; };
+		F32C31D225DCA4C20051054B /* CGRect+Valid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Valid.swift"; sourceTree = "<group>"; };
+		F32C31D325DCA4C20051054B /* UIView+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Keyboard.swift"; sourceTree = "<group>"; };
+		F32C31D425DCA4C20051054B /* UITextDocumentProxy+CurrentWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+CurrentWord.swift"; sourceTree = "<group>"; };
+		F32C31D525DCA4C20051054B /* UIInputViewController+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIInputViewController+Orientation.swift"; sourceTree = "<group>"; };
+		F32C31D625DCA4C20051054B /* UITextDocumentProxy+Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+Content.swift"; sourceTree = "<group>"; };
+		F32C31D725DCA4C20051054B /* UIDevice+Idiom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Idiom.swift"; sourceTree = "<group>"; };
+		F32C31D825DCA4C20051054B /* Font+Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Weight.swift"; sourceTree = "<group>"; };
+		F32C31D925DCA4C20051054B /* String+Chars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Chars.swift"; sourceTree = "<group>"; };
+		F32C31DA25DCA4C20051054B /* URL+KeyboardSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+KeyboardSettings.swift"; sourceTree = "<group>"; };
+		F32C31DB25DCA4C20051054B /* UIView+Subviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Subviews.swift"; sourceTree = "<group>"; };
+		F32C31DC25DCA4C20051054B /* View+Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Frame.swift"; sourceTree = "<group>"; };
+		F32C31DD25DCA4C20051054B /* EdgeInsets+Insets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Insets.swift"; sourceTree = "<group>"; };
+		F32C31DE25DCA4C20051054B /* Sequence+Batch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Batch.swift"; sourceTree = "<group>"; };
+		F32C31E025DCA4C20051054B /* SystemKeyboardSpaceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboardSpaceButton.swift; sourceTree = "<group>"; };
+		F32C31E125DCA4C20051054B /* SystemKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboardButton.swift; sourceTree = "<group>"; };
+		F32C31E225DCA4C20051054B /* SystemKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboard.swift; sourceTree = "<group>"; };
+		F32C31E325DCA4C20051054B /* SystemKeyboardSpaceButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboardSpaceButtonContent.swift; sourceTree = "<group>"; };
+		F32C31E425DCA4C20051054B /* SystemKeyboardButtonRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboardButtonRowItem.swift; sourceTree = "<group>"; };
+		F32C31E525DCA4C20051054B /* SystemKeyboardButtonContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemKeyboardButtonContent.swift; sourceTree = "<group>"; };
+		F32C31E725DCA4C20051054B /* AudioFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedback.swift; sourceTree = "<group>"; };
+		F32C31E825DCA4C20051054B /* SystemAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemAudioPlayer.swift; sourceTree = "<group>"; };
+		F32C31E925DCA4C20051054B /* StandardSystemAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardSystemAudioPlayer.swift; sourceTree = "<group>"; };
+		F32C31EA25DCA4C20051054B /* AudioFeedbackConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFeedbackConfiguration.swift; sourceTree = "<group>"; };
+		F32C31EC25DCA4C20051054B /* RepeatGestureTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatGestureTimer.swift; sourceTree = "<group>"; };
+		F32C31ED25DCA4C20051054B /* KeyboardGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGestures.swift; sourceTree = "<group>"; };
+		F32C31EE25DCA4C20051054B /* SpaceDragSensitivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDragSensitivity.swift; sourceTree = "<group>"; };
+		F32C31EF25DCA4C20051054B /* View+KeyboardGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+KeyboardGestures.swift"; sourceTree = "<group>"; };
+		F32C31F025DCA4C20051054B /* KeyboardGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGesture.swift; sourceTree = "<group>"; };
+		F32C31F225DCA4C20051054B /* StandardKeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F32C31F325DCA4C20051054B /* KeyboardAction+Aliases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+Aliases.swift"; sourceTree = "<group>"; };
+		F32C31F425DCA4C20051054B /* KeyboardActions+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardActions+Image.swift"; sourceTree = "<group>"; };
+		F32C31F525DCA4C20051054B /* KeyboardAction+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+Actions.swift"; sourceTree = "<group>"; };
+		F32C31F625DCA4C20051054B /* KeyboardAction+Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardAction+Grid.swift"; sourceTree = "<group>"; };
+		F32C31F725DCA4C20051054B /* KeyboardActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardActionHandler.swift; sourceTree = "<group>"; };
+		F32C31F825DCA4C20051054B /* KeyboardAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardAction.swift; sourceTree = "<group>"; };
+		F32C31FA25DCA4C20051054B /* SecondaryInputCalloutContext+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondaryInputCalloutContext+Preview.swift"; sourceTree = "<group>"; };
+		F32C31FB25DCA4C20051054B /* KeyboardLayoutProvider+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardLayoutProvider+Preview.swift"; sourceTree = "<group>"; };
+		F32C31FC25DCA4C20051054B /* UITextDocumentProxy+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextDocumentProxy+Preview.swift"; sourceTree = "<group>"; };
+		F32C31FD25DCA4C20051054B /* KeyboardActionHandler+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardActionHandler+Preview.swift"; sourceTree = "<group>"; };
+		F32C31FE25DCA4C20051054B /* InputCalloutContext+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InputCalloutContext+Preview.swift"; sourceTree = "<group>"; };
+		F32C31FF25DCA4C20051054B /* KeyboardInputSetProvider+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardInputSetProvider+Preview.swift"; sourceTree = "<group>"; };
+		F32C320025DCA4C20051054B /* ObservableKeyboardContext+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableKeyboardContext+Preview.swift"; sourceTree = "<group>"; };
+		F32C320125DCA4C20051054B /* KeyboardInputViewController+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardInputViewController+Preview.swift"; sourceTree = "<group>"; };
+		F32C320225DCA4C20051054B /* SecondaryCalloutActionProvider+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SecondaryCalloutActionProvider+Preview.swift"; sourceTree = "<group>"; };
+		F32C320425DCA4C20051054B /* FrequentEmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequentEmojiProvider.swift; sourceTree = "<group>"; };
+		F32C320525DCA4C20051054B /* EmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiProvider.swift; sourceTree = "<group>"; };
+		F32C320625DCA4C20051054B /* EmojiCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategory.swift; sourceTree = "<group>"; };
+		F32C320725DCA4C20051054B /* EmojiCategoryKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryKeyboard.swift; sourceTree = "<group>"; };
+		F32C320825DCA4C20051054B /* EmojiKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboard.swift; sourceTree = "<group>"; };
+		F32C320925DCA4C20051054B /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		F32C320A25DCA4C20051054B /* EmojiKeyboardConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiKeyboardConfiguration.swift; sourceTree = "<group>"; };
+		F32C320B25DCA4C20051054B /* EmojiCategoryKeyboardMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCategoryKeyboardMenu.swift; sourceTree = "<group>"; };
+		F32C320C25DCA4C20051054B /* MostRecentEmojiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentEmojiProvider.swift; sourceTree = "<group>"; };
+		F32C320E25DCA4C20051054B /* NextKeyboardUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextKeyboardUIButton.swift; sourceTree = "<group>"; };
+		F32C320F25DCA4C20051054B /* KeyboardGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardGrid.swift; sourceTree = "<group>"; };
+		F32C321025DCA4C20051054B /* KeyboardImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardImageButton.swift; sourceTree = "<group>"; };
+		F32C321125DCA4C20051054B /* NextKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextKeyboardButton.swift; sourceTree = "<group>"; };
+		F32C321225DCA4C30051054B /* CustomRoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRoundedRectangle.swift; sourceTree = "<group>"; };
+		F32C321425DCA4C30051054B /* KeyboardContext+KeyboardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyboardContext+KeyboardType.swift"; sourceTree = "<group>"; };
+		F32C321525DCA4C30051054B /* KeyboardStateInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardStateInspector.swift; sourceTree = "<group>"; };
+		F32C321625DCA4C30051054B /* KeyboardHostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHostingController.swift; sourceTree = "<group>"; };
+		F32C321725DCA4C30051054B /* KeyboardInputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardInputViewController.swift; sourceTree = "<group>"; };
+		F32C321825DCA4C30051054B /* KeyboardCasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardCasing.swift; sourceTree = "<group>"; };
+		F32C321925DCA4C30051054B /* KeyboardContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardContext.swift; sourceTree = "<group>"; };
+		F32C321A25DCA4C30051054B /* KeyboardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardType.swift; sourceTree = "<group>"; };
+		F32C321B25DCA4C30051054B /* KeyboardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardBehavior.swift; sourceTree = "<group>"; };
+		F32C321C25DCA4C30051054B /* ObservableKeyboardContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableKeyboardContext.swift; sourceTree = "<group>"; };
+		F32C321D25DCA4C30051054B /* StandardKeyboardBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardKeyboardBehavior.swift; sourceTree = "<group>"; };
+		F32C321F25DCA4C30051054B /* KKL10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KKL10n.swift; sourceTree = "<group>"; };
+		F32C322125DCA4C30051054B /* LocalizedSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F32C322225DCA4C30051054B /* View+SecondaryInputCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SecondaryInputCallout.swift"; sourceTree = "<group>"; };
+		F32C322325DCA4C30051054B /* SecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F32C322425DCA4C30051054B /* BaseSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F32C322525DCA4C30051054B /* SecondaryInputCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryInputCallout.swift; sourceTree = "<group>"; };
+		F32C322625DCA4C30051054B /* CalloutCurve.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutCurve.swift; sourceTree = "<group>"; };
+		F32C322725DCA4C30051054B /* SecondaryInputCalloutStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryInputCalloutStyle.swift; sourceTree = "<group>"; };
+		F32C322825DCA4C30051054B /* View+InputCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+InputCallout.swift"; sourceTree = "<group>"; };
+		F32C322925DCA4C30051054B /* SecondaryInputCalloutContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryInputCalloutContext.swift; sourceTree = "<group>"; };
+		F32C322A25DCA4C30051054B /* StandardSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F32C322B25DCA4C30051054B /* InputCalloutContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCalloutContext.swift; sourceTree = "<group>"; };
+		F32C322C25DCA4C30051054B /* CalloutStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalloutStyle.swift; sourceTree = "<group>"; };
+		F32C322D25DCA4C30051054B /* InputCalloutStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCalloutStyle.swift; sourceTree = "<group>"; };
+		F32C322E25DCA4C30051054B /* InputCallout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCallout.swift; sourceTree = "<group>"; };
+		F32C322F25DCA4C30051054B /* EnglishSecondaryCalloutActionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishSecondaryCalloutActionProvider.swift; sourceTree = "<group>"; };
+		F32C323225DCA4C30051054B /* package.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = package.xcworkspace; sourceTree = "<group>"; };
+		F32C323625DCA4C30051054B /* xcschememanagement.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = xcschememanagement.plist; sourceTree = "<group>"; };
+		F32C323925DCA4C30051054B /* KeyboardKit.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = KeyboardKit.xcscheme; sourceTree = "<group>"; };
+		F32C323B25DCA4C30051054B /* Keyboard-Actions.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Keyboard-Actions.md"; sourceTree = "<group>"; };
+		F32C323C25DCA4C30051054B /* Input-Sets.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Input-Sets.md"; sourceTree = "<group>"; };
+		F32C323D25DCA4C30051054B /* Callouts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Callouts.md; sourceTree = "<group>"; };
+		F32C323E25DCA4C30051054B /* Appearance.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Appearance.md; sourceTree = "<group>"; };
+		F32C323F25DCA4C30051054B /* Haptic-Feedback.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Haptic-Feedback.md"; sourceTree = "<group>"; };
+		F32C324025DCA4C30051054B /* Autocomplete.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Autocomplete.md; sourceTree = "<group>"; };
+		F32C324125DCA4C30051054B /* Keyboard-Layouts.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Keyboard-Layouts.md"; sourceTree = "<group>"; };
+		F32C324225DCA4C30051054B /* Keyboard-Types.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Keyboard-Types.md"; sourceTree = "<group>"; };
+		F32C324325DCA4C30051054B /* Audio-Feedback.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Audio-Feedback.md"; sourceTree = "<group>"; };
 		F355EE4225DBAF8900DECD1C /* MockKeyboardInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKeyboardInputViewController.swift; sourceTree = "<group>"; };
 		F355EE4325DBAF8900DECD1C /* MockKeyboardContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockKeyboardContext.swift; sourceTree = "<group>"; };
 		F355EE4425DBAF8900DECD1C /* MockInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockInputViewController.swift; sourceTree = "<group>"; };
@@ -112,11 +539,1178 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F355EE3925DBA92200DECD1C /* Frameworks */ = {
+		F32C305025DCA4C00051054B /* KeyboardKit */ = {
+			isa = PBXGroup;
+			children = (
+				F32C305125DCA4C00051054B /* Demo */,
+				F32C309125DCA4C10051054B /* LICENSE */,
+				F32C309225DCA4C10051054B /* KeyboardKit.podspec */,
+				F32C309325DCA4C10051054B /* .swiftlint.yml */,
+				F32C309425DCA4C10051054B /* UIKit */,
+				F32C30DA25DCA4C10051054B /* KeyboardKitDemo */,
+				F32C30DB25DCA4C10051054B /* Resources */,
+				F32C30F625DCA4C10051054B /* Tests */,
+				F32C315A25DCA4C20051054B /* README.md */,
+				F32C315B25DCA4C20051054B /* Package.resolved */,
+				F32C315C25DCA4C20051054B /* .gitignore */,
+				F32C315D25DCA4C20051054B /* Fastlane */,
+				F32C316025DCA4C20051054B /* .github */,
+				F32C316225DCA4C20051054B /* Package.swift */,
+				F32C316325DCA4C20051054B /* RELEASE_NOTES.md */,
+				F32C316425DCA4C20051054B /* Sources */,
+				F32C323025DCA4C30051054B /* .swiftpm */,
+				F32C323A25DCA4C30051054B /* Readmes */,
+			);
+			path = KeyboardKit;
+			sourceTree = "<group>";
+		};
+		F32C305125DCA4C00051054B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F32C305225DCA4C00051054B /* Demo.xcodeproj */,
+				F32C305525DCA4C00051054B /* Demo */,
+				F32C306C25DCA4C00051054B /* .swiftlint.yml */,
+				F32C306D25DCA4C00051054B /* swiftgen.yml */,
+				F32C306E25DCA4C00051054B /* Keyboard */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F32C305325DCA4C00051054B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32C324925DCA4C40051054B /* Demo.app */,
+				F32C324B25DCA4C40051054B /* Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32C305525DCA4C00051054B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F32C305625DCA4C00051054B /* Demo */,
+				F32C305C25DCA4C00051054B /* Resources */,
+				F32C306425DCA4C00051054B /* Preview Content */,
+				F32C306625DCA4C00051054B /* EditScreen.swift */,
+				F32C306725DCA4C00051054B /* DemoApp.swift */,
+				F32C306825DCA4C00051054B /* Views */,
+				F32C306A25DCA4C00051054B /* ContentView.swift */,
+				F32C306B25DCA4C00051054B /* Info.plist */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F32C305625DCA4C00051054B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F32C305725DCA4C00051054B /* DemoAppearance.swift */,
+				F32C305825DCA4C00051054B /* DemoListButton.swift */,
+				F32C305925DCA4C00051054B /* DemoListItem.swift */,
+				F32C305A25DCA4C00051054B /* DemoList.swift */,
+				F32C305B25DCA4C00051054B /* DemoListText.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F32C305C25DCA4C00051054B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F32C305D25DCA4C00051054B /* Image+Demo.swift */,
+				F32C305E25DCA4C00051054B /* Assets.xcassets */,
+				F32C305F25DCA4C00051054B /* Fonts.swift */,
+				F32C306025DCA4C00051054B /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F32C306025DCA4C00051054B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F32C306125DCA4C00051054B /* Source_Sans_Pro */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F32C306125DCA4C00051054B /* Source_Sans_Pro */ = {
+			isa = PBXGroup;
+			children = (
+				F32C306225DCA4C00051054B /* SourceSansPro-Regular.ttf */,
+				F32C306325DCA4C00051054B /* SourceSansPro-Bold.ttf */,
+			);
+			path = Source_Sans_Pro;
+			sourceTree = "<group>";
+		};
+		F32C306425DCA4C00051054B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F32C306525DCA4C00051054B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F32C306825DCA4C00051054B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F32C306925DCA4C00051054B /* MultilineTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F32C306E25DCA4C00051054B /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F32C306F25DCA4C00051054B /* DemoAutocompleteSuggestionProvider.swift */,
+				F32C307025DCA4C00051054B /* ImageKeyboard.swift */,
+				F32C307125DCA4C00051054B /* KeyboardView.swift */,
+				F32C307225DCA4C00051054B /* KeyboardViewController.swift */,
+				F32C307325DCA4C00051054B /* DemoKeyboardActionHandler.swift */,
+				F32C307425DCA4C00051054B /* Assets */,
+				F32C309025DCA4C10051054B /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		F32C307425DCA4C00051054B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F32C307525DCA4C00051054B /* Cartoon Icons */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F32C307525DCA4C00051054B /* Cartoon Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F32C307625DCA4C00051054B /* info.png */,
+				F32C307725DCA4C00051054B /* rss.png */,
+				F32C307825DCA4C00051054B /* warning.png */,
+				F32C307925DCA4C00051054B /* delicious.png */,
+				F32C307A25DCA4C00051054B /* note.png */,
+				F32C307B25DCA4C00051054B /* download.png */,
+				F32C307C25DCA4C00051054B /* mail.png */,
+				F32C307D25DCA4C00051054B /* zoom.png */,
+				F32C307E25DCA4C00051054B /* bubble.png */,
+				F32C307F25DCA4C00051054B /* label.png */,
+				F32C308025DCA4C00051054B /* cancel.png */,
+				F32C308125DCA4C00051054B /* mac.png */,
+				F32C308225DCA4C00051054B /* search.png */,
+				F32C308325DCA4C00051054B /* monitor.png */,
+				F32C308425DCA4C00051054B /* help.png */,
+				F32C308525DCA4C00051054B /* globe.png */,
+				F32C308625DCA4C00051054B /* color.png */,
+				F32C308725DCA4C00051054B /* base.png */,
+				F32C308825DCA4C00051054B /* video.png */,
+				F32C308925DCA4C00051054B /* idea.png */,
+				F32C308A25DCA4C00051054B /* edit.png */,
+				F32C308B25DCA4C00051054B /* trash.png */,
+				F32C308C25DCA4C00051054B /* box.png */,
+				F32C308D25DCA4C00051054B /* favorite.png */,
+				F32C308E25DCA4C00051054B /* refresh.png */,
+				F32C308F25DCA4C10051054B /* image.png */,
+			);
+			path = "Cartoon Icons";
+			sourceTree = "<group>";
+		};
+		F32C309425DCA4C10051054B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F32C309525DCA4C10051054B /* Demo */,
+				F32C30D825DCA4C10051054B /* README.md */,
+				F32C30D925DCA4C10051054B /* Tutorial.md */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F32C309525DCA4C10051054B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F32C309625DCA4C10051054B /* KeyboardKitDemo.xcodeproj */,
+				F32C309925DCA4C10051054B /* KeyboardKitDemo */,
+				F32C30C725DCA4C10051054B /* KeyboardKitDemoKeyboard */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F32C309725DCA4C10051054B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F32C324F25DCA4C40051054B /* KeyboardKitDemo.app */,
+				F32C325125DCA4C40051054B /* KeyboardKitDemoKeyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F32C309925DCA4C10051054B /* KeyboardKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F32C309A25DCA4C10051054B /* ViewController.swift */,
+				F32C309B25DCA4C10051054B /* Shared */,
+				F32C30A125DCA4C10051054B /* LaunchScreen.storyboard */,
+				F32C30A325DCA4C10051054B /* Main.storyboard */,
+				F32C30A525DCA4C10051054B /* AppDelegate.swift */,
+				F32C30A625DCA4C10051054B /* Assets */,
+				F32C30C525DCA4C10051054B /* Info.plist */,
+				F32C30C625DCA4C10051054B /* SceneDelegate.swift */,
+			);
+			path = KeyboardKitDemo;
+			sourceTree = "<group>";
+		};
+		F32C309B25DCA4C10051054B /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F32C309C25DCA4C10051054B /* DemoImageKeyboard.swift */,
+				F32C309D25DCA4C10051054B /* DemoAutocompleteSuggestionProvider.swift */,
+				F32C309E25DCA4C10051054B /* UIImage+Pasteboard.swift */,
+				F32C309F25DCA4C10051054B /* DemoKeyboardActionHandler.swift */,
+				F32C30A025DCA4C10051054B /* UIImage+Photos.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F32C30A625DCA4C10051054B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30A725DCA4C10051054B /* Assets.swift */,
+				F32C30A825DCA4C10051054B /* Colors.xcassets */,
+				F32C30A925DCA4C10051054B /* Images.xcassets */,
+				F32C30AA25DCA4C10051054B /* Cartoon Icons */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		F32C30AA25DCA4C10051054B /* Cartoon Icons */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30AB25DCA4C10051054B /* info.png */,
+				F32C30AC25DCA4C10051054B /* rss.png */,
+				F32C30AD25DCA4C10051054B /* warning.png */,
+				F32C30AE25DCA4C10051054B /* delicious.png */,
+				F32C30AF25DCA4C10051054B /* note.png */,
+				F32C30B025DCA4C10051054B /* download.png */,
+				F32C30B125DCA4C10051054B /* mail.png */,
+				F32C30B225DCA4C10051054B /* zoom.png */,
+				F32C30B325DCA4C10051054B /* bubble.png */,
+				F32C30B425DCA4C10051054B /* label.png */,
+				F32C30B525DCA4C10051054B /* cancel.png */,
+				F32C30B625DCA4C10051054B /* mac.png */,
+				F32C30B725DCA4C10051054B /* search.png */,
+				F32C30B825DCA4C10051054B /* monitor.png */,
+				F32C30B925DCA4C10051054B /* help.png */,
+				F32C30BA25DCA4C10051054B /* globe.png */,
+				F32C30BB25DCA4C10051054B /* color.png */,
+				F32C30BC25DCA4C10051054B /* base.png */,
+				F32C30BD25DCA4C10051054B /* video.png */,
+				F32C30BE25DCA4C10051054B /* idea.png */,
+				F32C30BF25DCA4C10051054B /* edit.png */,
+				F32C30C025DCA4C10051054B /* trash.png */,
+				F32C30C125DCA4C10051054B /* box.png */,
+				F32C30C225DCA4C10051054B /* favorite.png */,
+				F32C30C325DCA4C10051054B /* refresh.png */,
+				F32C30C425DCA4C10051054B /* image.png */,
+			);
+			path = "Cartoon Icons";
+			sourceTree = "<group>";
+		};
+		F32C30C725DCA4C10051054B /* KeyboardKitDemoKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30C825DCA4C10051054B /* Demo */,
+				F32C30CC25DCA4C10051054B /* Keyboards */,
+				F32C30D325DCA4C10051054B /* KeyboardViewController+Keyboard.swift */,
+				F32C30D425DCA4C10051054B /* KeyboardViewController.swift */,
+				F32C30D525DCA4C10051054B /* Info.plist */,
+				F32C30D625DCA4C10051054B /* Localization */,
+			);
+			path = KeyboardKitDemoKeyboard;
+			sourceTree = "<group>";
+		};
+		F32C30C825DCA4C10051054B /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30C925DCA4C10051054B /* DemoButton.swift */,
+				F32C30CA25DCA4C10051054B /* DemoButton.xib */,
+				F32C30CB25DCA4C10051054B /* DemoKeyboardActionHandler.swift */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F32C30CC25DCA4C10051054B /* Keyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30CD25DCA4C10051054B /* HorizontalFloatingHeaderLayout.swift */,
+				F32C30CE25DCA4C10051054B /* EnhancedEmojiKeyboard.swift */,
+				F32C30CF25DCA4C10051054B /* ImageKeyboard.swift */,
+				F32C30D025DCA4C10051054B /* DemoKeyboard.swift */,
+				F32C30D125DCA4C10051054B /* HFloatingHeaderButtonCollectionView.swift */,
+				F32C30D225DCA4C10051054B /* EmojiKeyboard.swift */,
+			);
+			path = Keyboards;
+			sourceTree = "<group>";
+		};
+		F32C30D625DCA4C10051054B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30D725DCA4C10051054B /* EmojiCategory+L10n.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F32C30DA25DCA4C10051054B /* KeyboardKitDemo */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = Frameworks;
+			path = KeyboardKitDemo;
+			sourceTree = "<group>";
+		};
+		F32C30DB25DCA4C10051054B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30DC25DCA4C10051054B /* Clients.sketch */,
+				F32C30DD25DCA4C10051054B /* logos */,
+				F32C30E025DCA4C10051054B /* Logo.png */,
+				F32C30E125DCA4C10051054B /* Logo.sketch */,
+				F32C30E225DCA4C10051054B /* Fonts */,
+				F32C30F425DCA4C10051054B /* Icon.sketch */,
+				F32C30F525DCA4C10051054B /* Demo.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F32C30DD25DCA4C10051054B /* logos */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30DE25DCA4C10051054B /* anomaly.png */,
+				F32C30DF25DCA4C10051054B /* milo.png */,
+			);
+			path = logos;
+			sourceTree = "<group>";
+		};
+		F32C30E225DCA4C10051054B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30E325DCA4C10051054B /* Special_Elite */,
+				F32C30E625DCA4C10051054B /* Roboto */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F32C30E325DCA4C10051054B /* Special_Elite */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30E425DCA4C10051054B /* SpecialElite-Regular.ttf */,
+				F32C30E525DCA4C10051054B /* LICENSE.txt */,
+			);
+			path = Special_Elite;
+			sourceTree = "<group>";
+		};
+		F32C30E625DCA4C10051054B /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30E725DCA4C10051054B /* Roboto-Medium.ttf */,
+				F32C30E825DCA4C10051054B /* Roboto-Light.ttf */,
+				F32C30E925DCA4C10051054B /* Roboto-Regular.ttf */,
+				F32C30EA25DCA4C10051054B /* Roboto-MediumItalic.ttf */,
+				F32C30EB25DCA4C10051054B /* Roboto-ThinItalic.ttf */,
+				F32C30EC25DCA4C10051054B /* Roboto-BoldItalic.ttf */,
+				F32C30ED25DCA4C10051054B /* Roboto-LightItalic.ttf */,
+				F32C30EE25DCA4C10051054B /* Roboto-Italic.ttf */,
+				F32C30EF25DCA4C10051054B /* LICENSE.txt */,
+				F32C30F025DCA4C10051054B /* Roboto-BlackItalic.ttf */,
+				F32C30F125DCA4C10051054B /* Roboto-Bold.ttf */,
+				F32C30F225DCA4C10051054B /* Roboto-Thin.ttf */,
+				F32C30F325DCA4C10051054B /* Roboto-Black.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		F32C30F625DCA4C10051054B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30F725DCA4C10051054B /* LinuxMain.swift */,
+				F32C30F825DCA4C10051054B /* KeyboardKitTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F32C30F825DCA4C10051054B /* KeyboardKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30F925DCA4C10051054B /* Mocks */,
+				F32C310225DCA4C10051054B /* Haptics */,
+				F32C310425DCA4C10051054B /* Locale */,
+				F32C310625DCA4C10051054B /* Autocomplete */,
+				F32C310825DCA4C10051054B /* Input */,
+				F32C310B25DCA4C10051054B /* Appearance */,
+				F32C311225DCA4C10051054B /* UIKit */,
+				F32C312C25DCA4C10051054B /* Layout */,
+				F32C313225DCA4C10051054B /* Extensions */,
+				F32C313B25DCA4C10051054B /* XCTestManifests.swift */,
+				F32C313C25DCA4C10051054B /* System */,
+				F32C313E25DCA4C10051054B /* Audio */,
+				F32C314125DCA4C10051054B /* Actions */,
+				F32C314925DCA4C10051054B /* Emojis */,
+				F32C314D25DCA4C10051054B /* Keyboard */,
+				F32C315725DCA4C20051054B /* Callouts */,
+			);
+			path = KeyboardKitTests;
+			sourceTree = "<group>";
+		};
+		F32C30F925DCA4C10051054B /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				F32C30FA25DCA4C10051054B /* MockKeyboardInputViewController.swift */,
+				F32C30FB25DCA4C10051054B /* MockCollectionViewLayout.swift */,
+				F32C30FC25DCA4C10051054B /* MockFrequentEmojiProvider.swift */,
+				F32C30FD25DCA4C10051054B /* MockKeyboardContext.swift */,
+				F32C30FE25DCA4C10051054B /* MockInputViewController.swift */,
+				F32C30FF25DCA4C10051054B /* MockDevice.swift */,
+				F32C310025DCA4C10051054B /* MockKeyboardInputSetProvider.swift */,
+				F32C310125DCA4C10051054B /* MockKeyboardActionHandler.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		F32C310225DCA4C10051054B /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				F32C310325DCA4C10051054B /* HapticFeedbackConfigurationTests.swift */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
+		F32C310425DCA4C10051054B /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				F32C310525DCA4C10051054B /* LocaleDictionaryTests.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		F32C310625DCA4C10051054B /* Autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				F32C310725DCA4C10051054B /* AutocompleteToolbarTests.swift */,
+			);
+			path = Autocomplete;
+			sourceTree = "<group>";
+		};
+		F32C310825DCA4C10051054B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				F32C310925DCA4C10051054B /* StandardKeyboardInputSetProviderTests.swift */,
+				F32C310A25DCA4C10051054B /* EnglishKeyboardInputSetProviderTests.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		F32C310B25DCA4C10051054B /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				F32C310C25DCA4C10051054B /* KeyboardCasing+ButtonTests.swift */,
+				F32C310D25DCA4C10051054B /* KeyboardType+ButtonTests.swift */,
+				F32C310E25DCA4C10051054B /* Color+ClearInteractableTests.swift */,
+				F32C310F25DCA4C10051054B /* Image+ButtonTests.swift */,
+				F32C311025DCA4C10051054B /* StandardKeyboardAppearanceTests.swift */,
+				F32C311125DCA4C10051054B /* KeyboardAction+ButtonTests.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		F32C311225DCA4C10051054B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F32C311325DCA4C10051054B /* Buttons */,
+				F32C311725DCA4C10051054B /* Shadow */,
+				F32C311925DCA4C10051054B /* Extensions */,
+				F32C311E25DCA4C10051054B /* Alerts */,
+				F32C312025DCA4C10051054B /* Components */,
+				F32C312425DCA4C10051054B /* Gestures */,
+				F32C312625DCA4C10051054B /* Views */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F32C311325DCA4C10051054B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F32C311425DCA4C10051054B /* UIKeyboardButtonViewTests.swift */,
+				F32C311525DCA4C10051054B /* UIKeyboardButtonRowTests.swift */,
+				F32C311625DCA4C10051054B /* UIKeyboardButton+GesturesTests.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F32C311725DCA4C10051054B /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				F32C311825DCA4C10051054B /* UIView+ShadowTests.swift */,
+			);
+			path = Shadow;
+			sourceTree = "<group>";
+		};
+		F32C311925DCA4C10051054B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F32C311A25DCA4C10051054B /* UIViewAutoresizing+ExtrasTests.swift */,
+				F32C311B25DCA4C10051054B /* UIView+NibTests.swift */,
+				F32C311C25DCA4C10051054B /* UIScrollView+PageIndexTests.swift */,
+				F32C311D25DCA4C10051054B /* UIStackView+SubviewsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F32C311E25DCA4C10051054B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F32C311F25DCA4C10051054B /* UIKeyboardToastAlertTests.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F32C312025DCA4C10051054B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F32C312125DCA4C10051054B /* PagedKeyboardComponentTests.swift */,
+				F32C312225DCA4C10051054B /* HorizontalKeyboardComponentTests.swift */,
+				F32C312325DCA4C10051054B /* VerticalKeyboardComponentTests.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F32C312425DCA4C10051054B /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				F32C312525DCA4C10051054B /* RepeatingGestureRecognizerTests.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		F32C312625DCA4C10051054B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F32C312725DCA4C10051054B /* KeyboardToolbarViewTests.swift */,
+				F32C312825DCA4C10051054B /* KeyboardSpacerViewTests.swift */,
+				F32C312925DCA4C10051054B /* KeyboardCollectionViewTests.swift */,
+				F32C312A25DCA4C10051054B /* KeyboardButtonRowCollectionViewTests.swift */,
+				F32C312B25DCA4C10051054B /* KeyboardButtonCollectionViewTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F32C312C25DCA4C10051054B /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F32C312D25DCA4C10051054B /* EdgeInsets+KeyboardTests.swift */,
+				F32C312E25DCA4C10051054B /* CGFloat+KeyboardTests.swift */,
+				F32C312F25DCA4C10051054B /* Providers */,
+				F32C313125DCA4C10051054B /* KeyboardLayoutTests.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		F32C312F25DCA4C10051054B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F32C313025DCA4C10051054B /* BaseKeyboardLayoutProviderTests.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		F32C313225DCA4C10051054B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F32C313325DCA4C10051054B /* UITextDocumentProxy+CurrentWordTests.swift */,
+				F32C313425DCA4C10051054B /* UIView+SubviewsTests.swift */,
+				F32C313525DCA4C10051054B /* String+CasingTests.swift */,
+				F32C313625DCA4C10051054B /* String+DelimitersTests.swift */,
+				F32C313725DCA4C10051054B /* View+ButtonTests.swift */,
+				F32C313825DCA4C10051054B /* Sequence+BatchTests.swift */,
+				F32C313925DCA4C10051054B /* UITextDocumentProxy+DeleteTests.swift */,
+				F32C313A25DCA4C10051054B /* UITextDocumentProxy+ContentTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F32C313C25DCA4C10051054B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F32C313D25DCA4C10051054B /* SystemKeyboardButtonTests.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F32C313E25DCA4C10051054B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				F32C313F25DCA4C10051054B /* AudioFeedbackConfigurationTests.swift */,
+				F32C314025DCA4C10051054B /* AudioFeedbackTests.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		F32C314125DCA4C10051054B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F32C314225DCA4C10051054B /* KeyboardAction+GridTests.swift */,
+				F32C314325DCA4C10051054B /* KeyboardAction+AliasesTests.swift */,
+				F32C314425DCA4C10051054B /* KeyboardAction+Test.swift */,
+				F32C314525DCA4C10051054B /* StandardKeyboardActionHandlerTests.swift */,
+				F32C314625DCA4C10051054B /* KeyboardAction+ActionsTests.swift */,
+				F32C314725DCA4C10051054B /* KeyboardActions+ImageTests.swift */,
+				F32C314825DCA4C10051054B /* KeyboardActionTests.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F32C314925DCA4C10051054B /* Emojis */ = {
+			isa = PBXGroup;
+			children = (
+				F32C314A25DCA4C10051054B /* MostRecentEmojiProviderTests.swift */,
+				F32C314B25DCA4C10051054B /* EmojiKeyboardConfigurationTests.swift */,
+				F32C314C25DCA4C10051054B /* EmojiCategoryTests.swift */,
+			);
+			path = Emojis;
+			sourceTree = "<group>";
+		};
+		F32C314D25DCA4C10051054B /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F32C314E25DCA4C10051054B /* KeyboardInputViewControllerTests.swift */,
+				F32C314F25DCA4C10051054B /* KeyboardHostingControllerTests.swift */,
+				F32C315025DCA4C10051054B /* KeyboardCasingTests.swift */,
+				F32C315125DCA4C20051054B /* KeyboardContext+KeyboardTypeTests.swift */,
+				F32C315225DCA4C20051054B /* ObservableKeyboardContextTests.swift */,
+				F32C315325DCA4C20051054B /* StandardKeyboardBehaviorTests.swift */,
+				F32C315425DCA4C20051054B /* KeyboardTypeTests.swift */,
+				F32C315525DCA4C20051054B /* KeyboardInputViewController+ViewTests.swift */,
+				F32C315625DCA4C20051054B /* KeyboardContextTests.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		F32C315725DCA4C20051054B /* Callouts */ = {
+			isa = PBXGroup;
+			children = (
+				F32C315825DCA4C20051054B /* StandardSecondaryCalloutActionProviderTests.swift */,
+				F32C315925DCA4C20051054B /* EnglishSecondaryCalloutActionProviderTests.swift */,
+			);
+			path = Callouts;
+			sourceTree = "<group>";
+		};
+		F32C315D25DCA4C20051054B /* Fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				F32C315E25DCA4C20051054B /* Fastfile */,
+				F32C315F25DCA4C20051054B /* README.md */,
+			);
+			path = Fastlane;
+			sourceTree = "<group>";
+		};
+		F32C316025DCA4C20051054B /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				F32C316125DCA4C20051054B /* FUNDING.yml */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		F32C316425DCA4C20051054B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F32C316525DCA4C20051054B /* KeyboardKit */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F32C316525DCA4C20051054B /* KeyboardKit */ = {
+			isa = PBXGroup;
+			children = (
+				F32C316625DCA4C20051054B /* Haptics */,
+				F32C316925DCA4C20051054B /* Locale */,
+				F32C316D25DCA4C20051054B /* Autocomplete */,
+				F32C317425DCA4C20051054B /* Input */,
+				F32C317D25DCA4C20051054B /* Appearance */,
+				F32C318B25DCA4C20051054B /* UIKit */,
+				F32C31B225DCA4C20051054B /* Layout */,
+				F32C31C125DCA4C20051054B /* Resources */,
+				F32C31C625DCA4C20051054B /* Toast */,
+				F32C31CA25DCA4C20051054B /* Bundle */,
+				F32C31CC25DCA4C20051054B /* Extensions */,
+				F32C31DF25DCA4C20051054B /* System */,
+				F32C31E625DCA4C20051054B /* Audio */,
+				F32C31EB25DCA4C20051054B /* Gestures */,
+				F32C31F125DCA4C20051054B /* Actions */,
+				F32C31F925DCA4C20051054B /* Previews */,
+				F32C320325DCA4C20051054B /* Emojis */,
+				F32C320D25DCA4C20051054B /* Views */,
+				F32C321325DCA4C30051054B /* Keyboard */,
+				F32C321E25DCA4C30051054B /* Localization */,
+				F32C322025DCA4C30051054B /* Callouts */,
+			);
+			path = KeyboardKit;
+			sourceTree = "<group>";
+		};
+		F32C316625DCA4C20051054B /* Haptics */ = {
+			isa = PBXGroup;
+			children = (
+				F32C316725DCA4C20051054B /* HapticFeedback.swift */,
+				F32C316825DCA4C20051054B /* HapticFeedbackConfiguration.swift */,
+			);
+			path = Haptics;
+			sourceTree = "<group>";
+		};
+		F32C316925DCA4C20051054B /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+				F32C316A25DCA4C20051054B /* LocaleDictionary.swift */,
+				F32C316B25DCA4C20051054B /* LocaleKey.swift */,
+				F32C316C25DCA4C20051054B /* LocalizedService.swift */,
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		F32C316D25DCA4C20051054B /* Autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				F32C316E25DCA4C20051054B /* AutocompleteSuggestion.swift */,
+				F32C316F25DCA4C20051054B /* AutocompleteToolbar.swift */,
+				F32C317025DCA4C20051054B /* ObservableAutocompleteContext.swift */,
+				F32C317125DCA4C20051054B /* StandardAutocompleteSuggestion.swift */,
+				F32C317225DCA4C20051054B /* AutocompleteSuggestionProvider.swift */,
+				F32C317325DCA4C20051054B /* AutocompleteContext.swift */,
+			);
+			path = Autocomplete;
+			sourceTree = "<group>";
+		};
+		F32C317425DCA4C20051054B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				F32C317525DCA4C20051054B /* StaticKeyboardInputSetProvider.swift */,
+				F32C317625DCA4C20051054B /* EnglishKeyboardInputSetProvider.swift */,
+				F32C317725DCA4C20051054B /* LocalizedKeyboardInputSetProvider.swift */,
+				F32C317825DCA4C20051054B /* KeyboardInputSetProvider.swift */,
+				F32C317925DCA4C20051054B /* KeyboardInput.swift */,
+				F32C317A25DCA4C20051054B /* DeviceSpecificInputSetProvider.swift */,
+				F32C317B25DCA4C20051054B /* StandardKeyboardInputSetProvider.swift */,
+				F32C317C25DCA4C20051054B /* KeyboardInputSet.swift */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		F32C317D25DCA4C20051054B /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				F32C317E25DCA4C20051054B /* Image+Button.swift */,
+				F32C317F25DCA4C20051054B /* KeyboardAction+Button.swift */,
+				F32C318025DCA4C20051054B /* KeyboardType+Button.swift */,
+				F32C318125DCA4C20051054B /* StandardKeyboardAppearance.swift */,
+				F32C318225DCA4C20051054B /* UIImage+Button.swift */,
+				F32C318325DCA4C20051054B /* Color+ClearInteractable.swift */,
+				F32C318425DCA4C20051054B /* StandardKeyboardAppearanceProvider.swift */,
+				F32C318525DCA4C20051054B /* KeyboardAppearance.swift */,
+				F32C318625DCA4C20051054B /* View+Button.swift */,
+				F32C318725DCA4C20051054B /* KeyboardCasing+Button.swift */,
+				F32C318825DCA4C20051054B /* Color+Button.swift */,
+				F32C318925DCA4C20051054B /* Color+Resources.swift */,
+				F32C318A25DCA4C20051054B /* KeyboardAppearanceProvider.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		F32C318B25DCA4C20051054B /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				F32C318C25DCA4C20051054B /* Buttons */,
+				F32C319125DCA4C20051054B /* Autocomplete */,
+				F32C319525DCA4C20051054B /* Shadow */,
+				F32C319825DCA4C20051054B /* Extensions */,
+				F32C31A025DCA4C20051054B /* Alerts */,
+				F32C31A325DCA4C20051054B /* Components */,
+				F32C31AA25DCA4C20051054B /* Gestures */,
+				F32C31AC25DCA4C20051054B /* Views */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F32C318C25DCA4C20051054B /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F32C318D25DCA4C20051054B /* UIKeyboardButtonView.swift */,
+				F32C318E25DCA4C20051054B /* UIKeyboardButtonRow.swift */,
+				F32C318F25DCA4C20051054B /* UIKeyboardButton.swift */,
+				F32C319025DCA4C20051054B /* UIKeyboardButton+Gestures.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		F32C319125DCA4C20051054B /* Autocomplete */ = {
+			isa = PBXGroup;
+			children = (
+				F32C319225DCA4C20051054B /* UIAutocompleteToolbarSeparator.swift */,
+				F32C319325DCA4C20051054B /* UIAutocompleteToolbarLabel.swift */,
+				F32C319425DCA4C20051054B /* UIAutocompleteToolbar.swift */,
+			);
+			path = Autocomplete;
+			sourceTree = "<group>";
+		};
+		F32C319525DCA4C20051054B /* Shadow */ = {
+			isa = PBXGroup;
+			children = (
+				F32C319625DCA4C20051054B /* UIShadow.swift */,
+				F32C319725DCA4C20051054B /* UIView+Shadow.swift */,
+			);
+			path = Shadow;
+			sourceTree = "<group>";
+		};
+		F32C319825DCA4C20051054B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F32C319925DCA4C20051054B /* UIScrollView+PageIndex.swift */,
+				F32C319A25DCA4C20051054B /* UIStackView+Subviews.swift */,
+				F32C319B25DCA4C20051054B /* UIColor+ClearInteractable.swift */,
+				F32C319C25DCA4C20051054B /* UIViewAutoresizing+Extras.swift */,
+				F32C319D25DCA4C20051054B /* UIView+Visibility.swift */,
+				F32C319E25DCA4C20051054B /* UIView+Constraints.swift */,
+				F32C319F25DCA4C20051054B /* UIView+Nib.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F32C31A025DCA4C20051054B /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31A125DCA4C20051054B /* UIKeyboardAlert.swift */,
+				F32C31A225DCA4C20051054B /* UIKeyboardToastAlert.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		F32C31A325DCA4C20051054B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31A425DCA4C20051054B /* UIPagedKeyboardComponent.swift */,
+				F32C31A525DCA4C20051054B /* UIKeyboardButtonRowComponent.swift */,
+				F32C31A625DCA4C20051054B /* UIHorizontalKeyboardComponent.swift */,
+				F32C31A725DCA4C20051054B /* UIKeyboardStackViewComponent.swift */,
+				F32C31A825DCA4C20051054B /* UIKeyboardToolbarComponent.swift */,
+				F32C31A925DCA4C20051054B /* UIVerticalKeyboardComponent.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F32C31AA25DCA4C20051054B /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31AB25DCA4C20051054B /* UIRepeatingGestureRecognizer.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		F32C31AC25DCA4C20051054B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31AD25DCA4C20051054B /* UIKeyboardButtonCollectionView.swift */,
+				F32C31AE25DCA4C20051054B /* UIKeyboardSpacerView.swift */,
+				F32C31AF25DCA4C20051054B /* UIKeyboardToolbarView.swift */,
+				F32C31B025DCA4C20051054B /* UIKeyboardCollectionView.swift */,
+				F32C31B125DCA4C20051054B /* UIKeyboardButtonRowCollectionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F32C31B225DCA4C20051054B /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31B325DCA4C20051054B /* Providers */,
+				F32C31B825DCA4C20051054B /* CGFloat+Keyboard.swift */,
+				F32C31B925DCA4C20051054B /* KeyboardLayoutItemSize.swift */,
+				F32C31BA25DCA4C20051054B /* EdgeInsets+Keyboard.swift */,
+				F32C31BB25DCA4C20051054B /* KeyboardLayoutItemWidth.swift */,
+				F32C31BC25DCA4C20051054B /* KeyboardLayoutProvider.swift */,
+				F32C31BD25DCA4C20051054B /* KeyboardLayoutItemRow.swift */,
+				F32C31BE25DCA4C20051054B /* StandardKeyboardLayoutProvider.swift */,
+				F32C31BF25DCA4C20051054B /* KeyboardLayoutItem.swift */,
+				F32C31C025DCA4C20051054B /* KeyboardLayout.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		F32C31B325DCA4C20051054B /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31B425DCA4C20051054B /* iPhoneKeyboardLayoutProvider.swift */,
+				F32C31B525DCA4C20051054B /* iPadKeyboardLayoutProvider.swift */,
+				F32C31B625DCA4C20051054B /* StaticKeyboardLayoutProvider.swift */,
+				F32C31B725DCA4C20051054B /* BaseKeyboardLayoutProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		F32C31C125DCA4C20051054B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31C225DCA4C20051054B /* Colors.xcassets */,
+				F32C31C325DCA4C20051054B /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F32C31C625DCA4C20051054B /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31C725DCA4C20051054B /* KeyboardToast.swift */,
+				F32C31C825DCA4C20051054B /* KeyboardToastContext.swift */,
+				F32C31C925DCA4C20051054B /* View+KeyboardToast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		F32C31CA25DCA4C20051054B /* Bundle */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31CB25DCA4C20051054B /* Bundle+Module.swift */,
+			);
+			path = Bundle;
+			sourceTree = "<group>";
+		};
+		F32C31CC25DCA4C20051054B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31CD25DCA4C20051054B /* UIInterfaceOrientation+Orientation.swift */,
+				F32C31CE25DCA4C20051054B /* UITextDocumentProxy+Delete.swift */,
+				F32C31CF25DCA4C20051054B /* UIScreen+Orientation.swift */,
+				F32C31D025DCA4C20051054B /* String+Delimiters.swift */,
+				F32C31D125DCA4C20051054B /* String+Casing.swift */,
+				F32C31D225DCA4C20051054B /* CGRect+Valid.swift */,
+				F32C31D325DCA4C20051054B /* UIView+Keyboard.swift */,
+				F32C31D425DCA4C20051054B /* UITextDocumentProxy+CurrentWord.swift */,
+				F32C31D525DCA4C20051054B /* UIInputViewController+Orientation.swift */,
+				F32C31D625DCA4C20051054B /* UITextDocumentProxy+Content.swift */,
+				F32C31D725DCA4C20051054B /* UIDevice+Idiom.swift */,
+				F32C31D825DCA4C20051054B /* Font+Weight.swift */,
+				F32C31D925DCA4C20051054B /* String+Chars.swift */,
+				F32C31DA25DCA4C20051054B /* URL+KeyboardSettings.swift */,
+				F32C31DB25DCA4C20051054B /* UIView+Subviews.swift */,
+				F32C31DC25DCA4C20051054B /* View+Frame.swift */,
+				F32C31DD25DCA4C20051054B /* EdgeInsets+Insets.swift */,
+				F32C31DE25DCA4C20051054B /* Sequence+Batch.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F32C31DF25DCA4C20051054B /* System */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31E025DCA4C20051054B /* SystemKeyboardSpaceButton.swift */,
+				F32C31E125DCA4C20051054B /* SystemKeyboardButton.swift */,
+				F32C31E225DCA4C20051054B /* SystemKeyboard.swift */,
+				F32C31E325DCA4C20051054B /* SystemKeyboardSpaceButtonContent.swift */,
+				F32C31E425DCA4C20051054B /* SystemKeyboardButtonRowItem.swift */,
+				F32C31E525DCA4C20051054B /* SystemKeyboardButtonContent.swift */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		F32C31E625DCA4C20051054B /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31E725DCA4C20051054B /* AudioFeedback.swift */,
+				F32C31E825DCA4C20051054B /* SystemAudioPlayer.swift */,
+				F32C31E925DCA4C20051054B /* StandardSystemAudioPlayer.swift */,
+				F32C31EA25DCA4C20051054B /* AudioFeedbackConfiguration.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		F32C31EB25DCA4C20051054B /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31EC25DCA4C20051054B /* RepeatGestureTimer.swift */,
+				F32C31ED25DCA4C20051054B /* KeyboardGestures.swift */,
+				F32C31EE25DCA4C20051054B /* SpaceDragSensitivity.swift */,
+				F32C31EF25DCA4C20051054B /* View+KeyboardGestures.swift */,
+				F32C31F025DCA4C20051054B /* KeyboardGesture.swift */,
+			);
+			path = Gestures;
+			sourceTree = "<group>";
+		};
+		F32C31F125DCA4C20051054B /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31F225DCA4C20051054B /* StandardKeyboardActionHandler.swift */,
+				F32C31F325DCA4C20051054B /* KeyboardAction+Aliases.swift */,
+				F32C31F425DCA4C20051054B /* KeyboardActions+Image.swift */,
+				F32C31F525DCA4C20051054B /* KeyboardAction+Actions.swift */,
+				F32C31F625DCA4C20051054B /* KeyboardAction+Grid.swift */,
+				F32C31F725DCA4C20051054B /* KeyboardActionHandler.swift */,
+				F32C31F825DCA4C20051054B /* KeyboardAction.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F32C31F925DCA4C20051054B /* Previews */ = {
+			isa = PBXGroup;
+			children = (
+				F32C31FA25DCA4C20051054B /* SecondaryInputCalloutContext+Preview.swift */,
+				F32C31FB25DCA4C20051054B /* KeyboardLayoutProvider+Preview.swift */,
+				F32C31FC25DCA4C20051054B /* UITextDocumentProxy+Preview.swift */,
+				F32C31FD25DCA4C20051054B /* KeyboardActionHandler+Preview.swift */,
+				F32C31FE25DCA4C20051054B /* InputCalloutContext+Preview.swift */,
+				F32C31FF25DCA4C20051054B /* KeyboardInputSetProvider+Preview.swift */,
+				F32C320025DCA4C20051054B /* ObservableKeyboardContext+Preview.swift */,
+				F32C320125DCA4C20051054B /* KeyboardInputViewController+Preview.swift */,
+				F32C320225DCA4C20051054B /* SecondaryCalloutActionProvider+Preview.swift */,
+			);
+			path = Previews;
+			sourceTree = "<group>";
+		};
+		F32C320325DCA4C20051054B /* Emojis */ = {
+			isa = PBXGroup;
+			children = (
+				F32C320425DCA4C20051054B /* FrequentEmojiProvider.swift */,
+				F32C320525DCA4C20051054B /* EmojiProvider.swift */,
+				F32C320625DCA4C20051054B /* EmojiCategory.swift */,
+				F32C320725DCA4C20051054B /* EmojiCategoryKeyboard.swift */,
+				F32C320825DCA4C20051054B /* EmojiKeyboard.swift */,
+				F32C320925DCA4C20051054B /* Emoji.swift */,
+				F32C320A25DCA4C20051054B /* EmojiKeyboardConfiguration.swift */,
+				F32C320B25DCA4C20051054B /* EmojiCategoryKeyboardMenu.swift */,
+				F32C320C25DCA4C20051054B /* MostRecentEmojiProvider.swift */,
+			);
+			path = Emojis;
+			sourceTree = "<group>";
+		};
+		F32C320D25DCA4C20051054B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F32C320E25DCA4C20051054B /* NextKeyboardUIButton.swift */,
+				F32C320F25DCA4C20051054B /* KeyboardGrid.swift */,
+				F32C321025DCA4C20051054B /* KeyboardImageButton.swift */,
+				F32C321125DCA4C20051054B /* NextKeyboardButton.swift */,
+				F32C321225DCA4C30051054B /* CustomRoundedRectangle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F32C321325DCA4C30051054B /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F32C321425DCA4C30051054B /* KeyboardContext+KeyboardType.swift */,
+				F32C321525DCA4C30051054B /* KeyboardStateInspector.swift */,
+				F32C321625DCA4C30051054B /* KeyboardHostingController.swift */,
+				F32C321725DCA4C30051054B /* KeyboardInputViewController.swift */,
+				F32C321825DCA4C30051054B /* KeyboardCasing.swift */,
+				F32C321925DCA4C30051054B /* KeyboardContext.swift */,
+				F32C321A25DCA4C30051054B /* KeyboardType.swift */,
+				F32C321B25DCA4C30051054B /* KeyboardBehavior.swift */,
+				F32C321C25DCA4C30051054B /* ObservableKeyboardContext.swift */,
+				F32C321D25DCA4C30051054B /* StandardKeyboardBehavior.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		F32C321E25DCA4C30051054B /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F32C321F25DCA4C30051054B /* KKL10n.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F32C322025DCA4C30051054B /* Callouts */ = {
+			isa = PBXGroup;
+			children = (
+				F32C322125DCA4C30051054B /* LocalizedSecondaryCalloutActionProvider.swift */,
+				F32C322225DCA4C30051054B /* View+SecondaryInputCallout.swift */,
+				F32C322325DCA4C30051054B /* SecondaryCalloutActionProvider.swift */,
+				F32C322425DCA4C30051054B /* BaseSecondaryCalloutActionProvider.swift */,
+				F32C322525DCA4C30051054B /* SecondaryInputCallout.swift */,
+				F32C322625DCA4C30051054B /* CalloutCurve.swift */,
+				F32C322725DCA4C30051054B /* SecondaryInputCalloutStyle.swift */,
+				F32C322825DCA4C30051054B /* View+InputCallout.swift */,
+				F32C322925DCA4C30051054B /* SecondaryInputCalloutContext.swift */,
+				F32C322A25DCA4C30051054B /* StandardSecondaryCalloutActionProvider.swift */,
+				F32C322B25DCA4C30051054B /* InputCalloutContext.swift */,
+				F32C322C25DCA4C30051054B /* CalloutStyle.swift */,
+				F32C322D25DCA4C30051054B /* InputCalloutStyle.swift */,
+				F32C322E25DCA4C30051054B /* InputCallout.swift */,
+				F32C322F25DCA4C30051054B /* EnglishSecondaryCalloutActionProvider.swift */,
+			);
+			path = Callouts;
+			sourceTree = "<group>";
+		};
+		F32C323025DCA4C30051054B /* .swiftpm */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323125DCA4C30051054B /* xcode */,
+			);
+			path = .swiftpm;
+			sourceTree = "<group>";
+		};
+		F32C323125DCA4C30051054B /* xcode */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323225DCA4C30051054B /* package.xcworkspace */,
+				F32C323325DCA4C30051054B /* xcuserdata */,
+				F32C323725DCA4C30051054B /* xcshareddata */,
+			);
+			path = xcode;
+			sourceTree = "<group>";
+		};
+		F32C323325DCA4C30051054B /* xcuserdata */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323425DCA4C30051054B /* brennanium.xcuserdatad */,
+			);
+			path = xcuserdata;
+			sourceTree = "<group>";
+		};
+		F32C323425DCA4C30051054B /* brennanium.xcuserdatad */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323525DCA4C30051054B /* xcschemes */,
+			);
+			path = brennanium.xcuserdatad;
+			sourceTree = "<group>";
+		};
+		F32C323525DCA4C30051054B /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323625DCA4C30051054B /* xcschememanagement.plist */,
+			);
+			path = xcschemes;
+			sourceTree = "<group>";
+		};
+		F32C323725DCA4C30051054B /* xcshareddata */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323825DCA4C30051054B /* xcschemes */,
+			);
+			path = xcshareddata;
+			sourceTree = "<group>";
+		};
+		F32C323825DCA4C30051054B /* xcschemes */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323925DCA4C30051054B /* KeyboardKit.xcscheme */,
+			);
+			path = xcschemes;
+			sourceTree = "<group>";
+		};
+		F32C323A25DCA4C30051054B /* Readmes */ = {
+			isa = PBXGroup;
+			children = (
+				F32C323B25DCA4C30051054B /* Keyboard-Actions.md */,
+				F32C323C25DCA4C30051054B /* Input-Sets.md */,
+				F32C323D25DCA4C30051054B /* Callouts.md */,
+				F32C323E25DCA4C30051054B /* Appearance.md */,
+				F32C323F25DCA4C30051054B /* Haptic-Feedback.md */,
+				F32C324025DCA4C30051054B /* Autocomplete.md */,
+				F32C324125DCA4C30051054B /* Keyboard-Layouts.md */,
+				F32C324225DCA4C30051054B /* Keyboard-Types.md */,
+				F32C324325DCA4C30051054B /* Audio-Feedback.md */,
+			);
+			path = Readmes;
 			sourceTree = "<group>";
 		};
 		F355EE4125DBAF3D00DECD1C /* Mocks */ = {
@@ -141,7 +1735,7 @@
 				F357BA4025AD6B040019D597 /* Bord-iuchrach Gaidhlig */,
 				F357BA5625AD6D530019D597 /* Keyboard */,
 				F357BA3F25AD6B040019D597 /* Products */,
-				F355EE3925DBA92200DECD1C /* Frameworks */,
+				F32C2E4925DCA4840051054B /* KeyboardKit */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +1755,7 @@
 				F357BA4325AD6B040019D597 /* ContentView.swift */,
 				F357BA4525AD6B0B0019D597 /* Assets.xcassets */,
 				F357BA4A25AD6B0B0019D597 /* Info.plist */,
+				F32C305025DCA4C00051054B /* KeyboardKit */,
 				F357BA4725AD6B0B0019D597 /* Preview Content */,
 			);
 			path = "Bord-iuchrach Gaidhlig";
@@ -288,6 +1883,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = F357BA3525AD6B030019D597;
 			packageReferences = (
@@ -296,6 +1892,16 @@
 			);
 			productRefGroup = F357BA3F25AD6B040019D597 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F32C305325DCA4C00051054B /* Products */;
+					ProjectRef = F32C305225DCA4C00051054B /* Demo.xcodeproj */;
+				},
+				{
+					ProductGroup = F32C309725DCA4C10051054B /* Products */;
+					ProjectRef = F32C309625DCA4C10051054B /* KeyboardKitDemo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F357BA3D25AD6B040019D597 /* Bord-iuchrach Gaidhlig */,
@@ -303,6 +1909,37 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F32C324925DCA4C40051054B /* Demo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Demo.app;
+			remoteRef = F32C324825DCA4C40051054B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F32C324B25DCA4C40051054B /* Keyboard.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = Keyboard.appex;
+			remoteRef = F32C324A25DCA4C40051054B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F32C324F25DCA4C40051054B /* KeyboardKitDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = KeyboardKitDemo.app;
+			remoteRef = F32C324E25DCA4C40051054B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F32C325125DCA4C40051054B /* KeyboardKitDemoKeyboard.appex */ = {
+			isa = PBXReferenceProxy;
+			fileType = "wrapper.app-extension";
+			path = KeyboardKitDemoKeyboard.appex;
+			remoteRef = F32C325025DCA4C40051054B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F357BA3C25AD6B040019D597 /* Resources */ = {
@@ -368,6 +2005,34 @@
 			targetProxy = F357BA5A25AD6D530019D597 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F32C30A125DCA4C10051054B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32C30A225DCA4C10051054B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F32C30A325DCA4C10051054B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32C30A425DCA4C10051054B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F32C31C325DCA4C20051054B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F32C31C425DCA4C20051054B /* en */,
+				F32C31C525DCA4C20051054B /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F357BA4B25AD6B0B0019D597 /* Debug */ = {
@@ -617,8 +2282,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielsaidi/KeyboardKit.git";
 			requirement = {
-				branch = v4.0;
-				kind = branch;
+				kind = exactVersion;
+				version = 4.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

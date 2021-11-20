@@ -25,7 +25,7 @@ class BGKeyboardAppearanceProvider: StandardKeyboardAppearance {
     
     private var controller: KeyboardInputViewController { .shared }
     
-    private var shiftState: KeyboardShiftState? {
+    private var shiftState: KeyboardCasing? {
         let type = context.keyboardType
         switch type {
         case .alphabetic(let state): return state

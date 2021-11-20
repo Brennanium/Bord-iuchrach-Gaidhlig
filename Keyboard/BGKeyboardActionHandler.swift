@@ -64,6 +64,8 @@ class BGKeyboardActionHandler: StandardKeyboardActionHandler {
         case .longPress: return action.standardLongPressAction
         case .repeatPress: return action.standardRepeatAction
         case .tap: return tapAction(for: gesture, on: action)
+        case .press: return action.standardPressAction
+        case .release: return action.standardReleaseAction
         }
     }
     
